@@ -3,7 +3,7 @@
 
 1. Arrays & Hashing (9 Questions)
     1. [Contains Duplicate (Easy)](src/contains_duplicate.cc)
-    2. [Valid Anagram (Easy)](src/test.md)
+    2. [Valid Anagram (Easy)](src/valid_anagram.cc)
     Two Sum (Easy)
     Group Anagrams (Medium)
     Top K Frequent Elements (Medium)
