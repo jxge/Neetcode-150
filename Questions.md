@@ -1,8 +1,8 @@
 # Neetcode 150 Questions
-[See](src/test.md)
+
 
 1. Arrays & Hashing (9 Questions)
-    1. [Contains Duplicate (Easy)](src/test.md)
+    1. [Contains Duplicate (Easy)](src/contains_duplicate.cc)
     2. [Valid Anagram (Easy)](src/test.md)
     Two Sum (Easy)
     Group Anagrams (Medium)
