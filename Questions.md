@@ -1,6 +1,6 @@
 # Neetcode 150 Questions
 <ol>
-<li> Arrays & Hashing (9 Questions)
+<li> Arrays & Hashing (9 Questions)[See](src/test.md)
   <ol type="1">
   <li> Contains Duplicate (Easy)
   <li> Valid Anagram (Easy)
