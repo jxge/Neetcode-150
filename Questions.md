@@ -3,7 +3,7 @@
 
 1. Arrays & Hashing (9 Questions)
     1. [Contains Duplicate (Easy)](https://neetcode.io/problems/duplicate-integer/question?list=neetcode150) - [Solution](src/contains_duplicate.cc)
-    2. [Valid Anagram (Easy)](https://neetcode.io/problems/is-anagram/question?list=neetcode150) - [Solution])src/valid_anagram.cc)
+    2. [Valid Anagram (Easy)](https://neetcode.io/problems/is-anagram/question?list=neetcode150) - [Solution](src/valid_anagram.cc)
     3. [Two Sum (Easy)](https://neetcode.io/problems/two-integer-sum/question?list=neetcode150) - [Solution](src/tow_sum.cc)
     4. [Group Anagrams (Medium)](https://neetcode.io/problems/anagram-groups/question?list=neetcode150) [Solution](src/group_anagrams.cc)
     Top K Frequent Elements (Medium)
