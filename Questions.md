@@ -1,6 +1,20 @@
 # Neetcode 150 Questions
+[See](src/test.md)
+
+1. Arrays & Hashing (9 Questions)
+    1. [Contains Duplicate (Easy)](src/test.md)
+    2. [Valid Anagram (Easy)](src/test.md)
+    Two Sum (Easy)
+    Group Anagrams (Medium)
+    Top K Frequent Elements (Medium)
+    Product of Array Except Self (Medium)
+    Valid Sudoku (Medium)
+    Encode and Decode Strings (Medium)
+    Longest Consecutive Sequence (Medium) 
+    
 <ol>
 <li> Arrays & Hashing (9 Questions)[See](src/test.md)
+  [Contains Duplicate](src/test.md)<br>
   <ol type="1">
   <li> Contains Duplicate (Easy)
   <li> Valid Anagram (Easy)
