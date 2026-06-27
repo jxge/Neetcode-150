@@ -5,7 +5,7 @@
     1. [Contains Duplicate (Easy)](src/contains_duplicate.cc)
     2. [Valid Anagram (Easy)](src/valid_anagram.cc)
     3. [Two Sum (Easy)](src/tow_sum.cc)
-    4. [Group Anagrams (Medium)](src/group anagrams.cc)
+    4. [Group Anagrams (Medium)](https://neetcode.io/problems/anagram-groups/question?list=neetcode150) [Solution](src/group_anagrams.cc)
     Top K Frequent Elements (Medium)
     Product of Array Except Self (Medium)
     Valid Sudoku (Medium)
