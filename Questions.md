@@ -8,10 +8,9 @@
     4. [Group Anagrams (Medium)](https://neetcode.io/problems/anagram-groups/question?list=neetcode150) [Solution](src/group_anagrams.cc)
     5. [Top K Frequent Elements (Medium)](https://neetcode.io/problems/top-k-elements-in-list/question?list=neetcode150) - [Solution](src/top_k_frequent_elements.cc)
     6. [Encode and Decode Strings (Medium)](https://neetcode.io/problems/string-encode-and-decode/question?list=neetcode150) - [Solution](src/encode_decode_string.cc)
-    7. [Product of Array Except Self (Medium)](https://neetcode.io/problems/products-of-array-discluding-self/question?list=neetcode150) 
-    8. [Valid Sudoku (Medium)](https://neetcode.io/problems/valid-sudoku/question?list=neetcode150)
-    
-    Longest Consecutive Sequence (Medium) 
+    7. [Product of Array Except Self (Medium)](https://neetcode.io/problems/products-of-array-discluding-self/question?list=neetcode150) - [Solution](src/product_of_array_except_self.cc)
+    8. [Valid Sudoku (Medium)](https://neetcode.io/problems/valid-sudoku/question?list=neetcode150) - [Solution](src/valid_sudoku.cc]
+    9. [Longest Consecutive Sequence (Medium)](https://neetcode.io/problems/longest-consecutive-sequence/question?list=neetcode150)
     
 <ol>
 <li> Arrays & Hashing (9 Questions)[See](src/test.md)
