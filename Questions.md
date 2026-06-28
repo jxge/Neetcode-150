@@ -7,7 +7,7 @@
     3. [Two Sum (Easy)](https://neetcode.io/problems/two-integer-sum/question?list=neetcode150) - [Solution](src/tow_sum.cc)
     4. [Group Anagrams (Medium)](https://neetcode.io/problems/anagram-groups/question?list=neetcode150) [Solution](src/group_anagrams.cc)
     5. [Top K Frequent Elements (Medium)](https://neetcode.io/problems/top-k-elements-in-list/question?list=neetcode150) - [Solution](src/top_k_frequent_elements.cc)
-    6. [Encode and Decode Strings (Medium)](src/encode_decode_string.cc)
+    6. [Encode and Decode Strings (Medium)](https://neetcode.io/problems/string-encode-and-decode/question?list=neetcode150) - [Solution](src/encode_decode_string.cc)
     7. [Product of Array Except Self (Medium)](https://neetcode.io/problems/products-of-array-discluding-self/question?list=neetcode150) 
     8. [Valid Sudoku (Medium)](https://neetcode.io/problems/valid-sudoku/question?list=neetcode150)
     
