@@ -9,40 +9,24 @@
     5. [Top K Frequent Elements (Medium)](https://neetcode.io/problems/top-k-elements-in-list/question?list=neetcode150) - [Solution](src/top_k_frequent_elements.cc)
     6. [Encode and Decode Strings (Medium)](https://neetcode.io/problems/string-encode-and-decode/question?list=neetcode150) - [Solution](src/encode_decode_string.cc)
     7. [Product of Array Except Self (Medium)](https://neetcode.io/problems/products-of-array-discluding-self/question?list=neetcode150) - [Solution](src/product_of_array_except_self.cc)
-    8. [Valid Sudoku (Medium)](https://neetcode.io/problems/valid-sudoku/question?list=neetcode150) - [Solution](src/valid_sudoku.cc]
-    9. [Longest Consecutive Sequence (Medium)](https://neetcode.io/problems/longest-consecutive-sequence/question?list=neetcode150)
+    8. [Valid Sudoku (Medium)](https://neetcode.io/problems/valid-sudoku/question?list=neetcode150) - [Solution](src/valid_sudoku.cc)
+    9. [Longest Consecutive Sequence (Medium)](https://neetcode.io/problems/longest-consecutive-sequence/question?list=neetcode150) - [Solution](src/longest_consecutive_sequence.cc)
     
-<ol>
-<li> Arrays & Hashing (9 Questions)[See](src/test.md)
-  [Contains Duplicate](src/test.md)<br>
-  <ol type="1">
-  <li> Contains Duplicate (Easy)
-  <li> Valid Anagram (Easy)
-  <li> Two Sum (Easy)
-  <li> Group Anagrams (Medium)
-  <li> Top K Frequent Elements (Medium)
-  <li> Product of Array Except Self (Medium)
-  <li> Valid Sudoku (Medium)
-  <li> Encode and Decode Strings (Medium)
-  <li> Longest Consecutive Sequence (Medium)
-  </ol>
-<li> Two Pointers (5 Questions)
-  <ol type="1">
-  <li> Valid Palindrome (Easy)
-  <li> Two Sum II - Input Array Is Sorted (Medium)
-  <li> 3Sum (Medium)
-  <li> Container With Most Water (Medium)
-  <li> Trapping Rain Water (Hard)
-  </ol>  
-<li> Sliding Window (6 Questions)
-  <ol type="1">
-  <li> Best Time to Buy and Sell Stock (Easy)
-  <li> Longest Substring Without Repeating Characters (Medium)
-  <li> Longest Repeating Character Replacement (Medium)
-  <li> Permutation in String (Medium)
-  <li> Minimum Window Substring (Hard)
-  <li>Sliding Window Maximum (Hard) 
-  </ol>
+2. Two Pointers (5 Questions)
+    1. [Valid Palindrome (Easy)](https://neetcode.io/problems/is-palindrome/question?list=neetcode150) - [Solution](src/valid_anagram.cc)
+    2. [Two Sum II - Input Array Is Sorted (Medium)](https://neetcode.io/problems/two-integer-sum-ii/question?list=neetcode150) - [Solution](src/valid_anagram.cc)
+    3. [3Sum (Medium)](https://neetcode.io/problems/three-integer-sum/question?list=neetcode150) - [Solution](src/valid_anagram.cc)
+    4. [Container With Most Water (Medium)](https://neetcode.io/problems/max-water-container/question?list=neetcode150) - [Solution](src/valid_anagram.cc)
+    5. [Trapping Rain Water (Hard)](https://neetcode.io/problems/trapping-rain-water/question?list=neetcode150) - [Solution](src/valid_anagram.cc)
+    
+3. Sliding Window (6 Questions)
+    1. Best Time to Buy and Sell Stock (Easy)
+    2. Longest Substring Without Repeating Characters (Medium)
+    3. Longest Repeating Character Replacement (Medium)
+    4. Permutation in String (Medium)
+    5. Minimum Window Substring (Hard)
+    6. Sliding Window Maximum (Hard) 
+  
 <li> Stack (7 Questions)
   <ol type="1">
   <li> Valid Parentheses (Easy)
