@@ -13,15 +13,17 @@
     9. [Longest Consecutive Sequence (Medium)](https://neetcode.io/problems/longest-consecutive-sequence/question?list=neetcode150) - [Solution](src/longest_consecutive_sequence.cc)
     
 2. Two Pointers (5 Questions)
-    1. [Valid Palindrome (Easy)](https://neetcode.io/problems/is-palindrome/question?list=neetcode150) - [Solution](src/valid_anagram.cc)
+    1. [Valid Palindrome (Easy)](https://neetcode.io/problems/is-palindrome/question?list=neetcode150) - [Solution](src/best_time_to_buy_sell_stock.cc) [2 transactions](), and [K transactions]](src/
     2. [Two Sum II - Input Array Is Sorted (Medium)](https://neetcode.io/problems/two-integer-sum-ii/question?list=neetcode150) - [Solution](src/two_integer_sum2.cc)
     3. [3Sum (Medium)](https://neetcode.io/problems/three-integer-sum/question?list=neetcode150) - [Solution](src/3sum.cc)
     4. [Container With Most Water (Medium)](https://neetcode.io/problems/max-water-container/question?list=neetcode150) - [Solution](src/container_with_most_water.cc)
     5. [Trapping Rain Water (Hard)](https://neetcode.io/problems/trapping-rain-water/question?list=neetcode150) - [Solution](src/trapping_rain_water.cc)
     
 3. Sliding Window (6 Questions)
-    1. [Best Time to Buy and Sell Stock (Easy)](https://neetcode.io/problems/buy-and-sell-crypto/question?list=neetcode150) -- [Solution](src/two_sum.cc)
-    2. [Longest Substring Without Repeating Characters (Medium)](https://neetcode.io/problems/longest-substring-without-duplicates/question?list=neetcode150) -- [Solution](src/.cc)
+    1. [Best Time to Buy and Sell Stock (Easy)](https://neetcode.io/problems/buy-and-sell-crypto/question?list=neetcode150) -- 
+       [Solution](src/best_time_to_buy_sell_stock.cc), [K transaction case](src/best_time_to_buy_sell_stock_2.cc)
+    2. [Longest Substring Without Repeating Characters (Medium)](https://neetcode.io/problems/longest-substring-without-duplicates/question?list=neetcode150) -- 
+       [Solution](src/.cc)
     3. [Longest Repeating Character Replacement (Medium)](https://neetcode.io/problems/longest-repeating-substring-with-replacement/question?list=neetcode150) -- [Solution](src/.cc)
     4. [Permutation in String (Medium)](https://neetcode.io/problems/permutation-string/question?list=neetcode150) -- [Solution](src/.cc)
     5. [Minimum Window Substring (Hard)](https://neetcode.io/problems/minimum-window-with-characters/question?list=neetcode150) -- [Solution](src/.cc)
