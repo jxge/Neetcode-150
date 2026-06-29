@@ -15,9 +15,9 @@
 2. Two Pointers (5 Questions)
     1. [Valid Palindrome (Easy)](https://neetcode.io/problems/is-palindrome/question?list=neetcode150) - [Solution](src/valid_anagram.cc)
     2. [Two Sum II - Input Array Is Sorted (Medium)](https://neetcode.io/problems/two-integer-sum-ii/question?list=neetcode150) - [Solution](src/valid_anagram.cc)
-    3. [3Sum (Medium)](https://neetcode.io/problems/three-integer-sum/question?list=neetcode150) - [Solution](src/valid_anagram.cc)
-    4. [Container With Most Water (Medium)](https://neetcode.io/problems/max-water-container/question?list=neetcode150) - [Solution](src/valid_anagram.cc)
-    5. [Trapping Rain Water (Hard)](https://neetcode.io/problems/trapping-rain-water/question?list=neetcode150) - [Solution](src/valid_anagram.cc)
+    3. [3Sum (Medium)](https://neetcode.io/problems/three-integer-sum/question?list=neetcode150) - [Solution](src/3sum.cc)
+    4. [Container With Most Water (Medium)](https://neetcode.io/problems/max-water-container/question?list=neetcode150) - [Solution](src/container_with_most_water.cc)
+    5. [Trapping Rain Water (Hard)](https://neetcode.io/problems/trapping-rain-water/question?list=neetcode150) - [Solution](src/trapping_rain_water.cc)
     
 3. Sliding Window (6 Questions)
     1. Best Time to Buy and Sell Stock (Easy)
