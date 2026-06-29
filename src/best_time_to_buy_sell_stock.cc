@@ -4,6 +4,7 @@
 
 using namespace std;
 
+// allowing one transaction
 class Solution {
 public:
     int maxProfit(vector<int>& prices) {
@@ -26,6 +27,37 @@ public:
     }
 };
 
+/*
+ * Allowing 2 transactions
+ */
+class Solution2 {
+public:
+    int maxProfitTwoTransactions(vector<int>& prices) {
+        if (prices.empty()) return 0;
+        
+        // Track lowest costs (represented as negative cash flows or absolute costs)
+        int first_buy = INT_MAX;   // lowest price to buy the first coin so far
+        int first_sell = 0;        // the maximum profit after the first tranaction
+        int second_buy = INT_MAX;  // minimum effective cost to by the 2nd coin so far
+        int second_sell = 0;       // the maximum totoal profit after 2 transactions
+        
+        for (int price : prices) {
+            // 1. Minimize cost of first purchase
+            first_buy = min(first_buy, price);
+            
+            // 2. Maximize profit of first sale
+            first_sell = max(first_sell, price - first_buy);
+            
+            // 3. Minimize cost of second purchase by factoring in first transaction's profit
+            second_buy = min(second_buy, price - first_sell);
+            
+            // 4. Maximize total final profit
+            second_sell = max(second_sell, price - second_buy);
+        }
+        
+        return second_sell;
+    }
+};
 // Helper function to print an array layout nicely
 void printVector(const vector<int>& vec) {
     cout << "[";
