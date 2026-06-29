@@ -17,7 +17,7 @@ public:
             // Add current character to the window frequency count
             count[s[right] - 'A']++;
             
-            // Track the highest frequency of any single character seen in the current window
+            // tracks the all-time peak frequency of a single character in any window we've seen so far.
             max_frequency = max(max_frequency, count[s[right] - 'A']);
             
             // Current window size is (right - left + 1)
