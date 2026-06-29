@@ -20,12 +20,12 @@
     5. [Trapping Rain Water (Hard)](https://neetcode.io/problems/trapping-rain-water/question?list=neetcode150) - [Solution](src/trapping_rain_water.cc)
     
 3. Sliding Window (6 Questions)
-    1. Best Time to Buy and Sell Stock (Easy)
-    2. Longest Substring Without Repeating Characters (Medium)
-    3. Longest Repeating Character Replacement (Medium)
-    4. Permutation in String (Medium)
-    5. Minimum Window Substring (Hard)
-    6. Sliding Window Maximum (Hard) 
+    1. [Best Time to Buy and Sell Stock (Easy)](https://neetcode.io/problems/buy-and-sell-crypto/question?list=neetcode150) -- [Solution](src/two_sum.cc)
+    2. [Longest Substring Without Repeating Characters (Medium)](https://neetcode.io/problems/longest-substring-without-duplicates/question?list=neetcode150) -- [Solution](src/.cc)
+    3. [Longest Repeating Character Replacement (Medium)](https://neetcode.io/problems/longest-repeating-substring-with-replacement/question?list=neetcode150) -- [Solution](src/.cc)
+    4. [Permutation in String (Medium)](https://neetcode.io/problems/permutation-string/question?list=neetcode150) -- [Solution](src/.cc)
+    5. [Minimum Window Substring (Hard)](https://neetcode.io/problems/minimum-window-with-characters/question?list=neetcode150) -- [Solution](src/.cc)
+    6. [Sliding Window Maximum (Hard)](https://neetcode.io/problems/sliding-window-maximum/question?list=neetcode150) -- [Solution](src/.cc)
   
 <li> Stack (7 Questions)
   <ol type="1">
