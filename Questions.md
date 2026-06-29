@@ -23,8 +23,9 @@
     1. [Best Time to Buy and Sell Stock (Easy)](https://neetcode.io/problems/buy-and-sell-crypto/question?list=neetcode150) -- 
        [Solution](src/best_time_to_buy_sell_stock.cc), [K transaction case](src/best_time_to_buy_sell_stock_2.cc)
     2. [Longest Substring Without Repeating Characters (Medium)](https://neetcode.io/problems/longest-substring-without-duplicates/question?list=neetcode150) -- 
-       [Solution](src/.cc)
-    3. [Longest Repeating Character Replacement (Medium)](https://neetcode.io/problems/longest-repeating-substring-with-replacement/question?list=neetcode150) -- [Solution](src/.cc)
+       [Solution](src/longest_substring_without_dup.cc)
+    3. [Longest Repeating Character Replacement (Medium)](https://neetcode.io/problems/longest-repeating-substring-with-replacement/question?list=neetcode150) -- 
+       [Solution](src/longest_repeating_char_replacement.cc)
     4. [Permutation in String (Medium)](https://neetcode.io/problems/permutation-string/question?list=neetcode150) -- [Solution](src/.cc)
     5. [Minimum Window Substring (Hard)](https://neetcode.io/problems/minimum-window-with-characters/question?list=neetcode150) -- [Solution](src/.cc)
     6. [Sliding Window Maximum (Hard)](https://neetcode.io/problems/sliding-window-maximum/question?list=neetcode150) -- [Solution](src/.cc)
