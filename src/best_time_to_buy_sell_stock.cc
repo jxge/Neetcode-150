@@ -27,37 +27,66 @@ public:
     }
 };
 
-/*
- * Allowing 2 transactions
- */
+// Method 2: Kadane's Algorithm (Max Subarray Sum): Complexity: Time O(N), Space O(1)
+//     L[i] = maximum subarray sum ending at position i.
+//     L[i] = max(A[i], L[i-1] + A[i])
+// 
 class Solution2 {
 public:
-    int maxProfitTwoTransactions(vector<int>& prices) {
-        if (prices.empty()) return 0;
+    int maxProfit(vector<int>& prices) {
+        if (prices.size() < 2) return 0;
         
-        // Track lowest costs (represented as negative cash flows or absolute costs)
-        int first_buy = INT_MAX;   // lowest price to buy the first coin so far
-        int first_sell = 0;        // the maximum profit after the first tranaction
-        int second_buy = INT_MAX;  // minimum effective cost to by the 2nd coin so far
-        int second_sell = 0;       // the maximum totoal profit after 2 transactions
+        int current_difference_sum = 0;
+        int max_profit = 0;
         
-        for (int price : prices) {
-            // 1. Minimize cost of first purchase
-            first_buy = min(first_buy, price);
+        for (size_t i = 1; i < prices.size(); ++i) {
+            // Find daily price changes
+            int gain = prices[i] - prices[i - 1];
             
-            // 2. Maximize profit of first sale
-            first_sell = max(first_sell, price - first_buy);
-            
-            // 3. Minimize cost of second purchase by factoring in first transaction's profit
-            second_buy = min(second_buy, price - first_sell);
-            
-            // 4. Maximize total final profit
-            second_sell = max(second_sell, price - second_buy);
+            // Kadane's core choice: Extend current streak or start fresh
+            current_difference_sum = max(0, current_difference_sum + gain);
+            max_profit = max(max_profit, current_difference_sum);
         }
         
-        return second_sell;
+        return max_profit;
     }
 };
+
+// Divide and Conquer. Complexity is O(N log(N))
+class Solution {
+private:
+    int helper(const vector<int>& prices, int low, int high) {
+        if (low >= high) return 0;
+        
+        int mid = low + (high - low) / 2;
+        
+        // 1. Max profit completely in left or right regions
+        int left_profit = helper(prices, low, mid);
+        int right_profit = helper(prices, mid + 1, high);
+        
+        // 2. Cross region profit: Min in left half, Max in right half
+        int min_left = prices[low];
+        for (int i = low + 1; i <= mid; ++i) {
+            min_left = min(min_left, prices[i]);
+        }
+        
+        int max_right = prices[mid + 1];
+        for (int i = mid + 2; i <= high; ++i) {
+            max_right = max(max_right, prices[i]);
+        }
+        
+        int cross_profit = max_right - min_left;
+        
+        return max({left_profit, right_profit, cross_profit});
+    }
+
+public:
+    int maxProfit(vector<int>& prices) {
+        if (prices.empty()) return 0;
+        return helper(prices, 0, prices.size() - 1);
+    }
+};
+
 // Helper function to print an array layout nicely
 void printVector(const vector<int>& vec) {
     cout << "[";
