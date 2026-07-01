@@ -30,34 +30,59 @@
     5. [Minimum Window Substring (Hard)](https://neetcode.io/problems/minimum-window-with-characters/question?list=neetcode150) -- [Solution](src/minimum_window_substring.cc)
     6. [Sliding Window Maximum (Hard)](https://neetcode.io/problems/sliding-window-maximum/question?list=neetcode150) -- [Solution](src/sliding_window_maximum.cc)
   
-<li> Stack (7 Questions)
-  <ol type="1">
-  <li> Valid Parentheses (Easy)
-  <li> Min Stack (Medium)
-  <li> Evaluate Reverse Polish Notation (Medium)
-  <li> Generate Parentheses (Medium)
-  <li> Daily Temperatures (Medium)
-  <li> Car Fleet (Medium)Largest Rectangle in Histogram (Hard)
-  </ol>
-<li> Linked List (11 Problems)
-<ol type="1">
-<li> Reverse Linked List (Easy)
-<li> Merge Two Sorted Lists (Easy)
-<li> Linked List Cycle (Easy)
-<li> Reorder List (Medium)
-<li> Remove Nth Node From End of List (Medium)
-<li> Copy List with Random Pointer (Medium)
-<li> Add Two Numbers (Medium)
-<li> Find the Duplicate Number (Medium)
-<li> </li>LRU Cache (Medium)
-<li> Reverse Nodes in k-Group (Hard)
-<li> Merge k Sorted Lists (Hard)
-</ol>
+4. Stack (7 Questions)
+    1. [Valid Parentheses (Easy)](https://neetcode.io/problems/validate-parentheses/question?list=neetcode150) -
+       [Solution](src/.cc)
+    2. [Min Stack (Medium)](https://neetcode.io/problems/minimum-stack/question?list=neetcode150) - 
+       [Solution](src/.cc)
+    3. [Evaluate Reverse Polish Notation (Medium)](https://neetcode.io/problems/evaluate-reverse-polish-notation/question?list=neetcode150) - 
+       [Solution](src/.cc)
+    4. [Daily Temperatures (Medium)](https://neetcode.io/problems/daily-temperatures/question?list=neetcode150) -
+       [Solution](src/.cc)
+    5. [Car Fleet (Medium)Largest Rectangle in Histogram (Hard)](https://neetcode.io/problems/car-fleet/question?list=neetcode150) - 
+       [Solution](src/.cc)
+    6. [Largest Rectangle In Histogram](https://neetcode.io/problems/largest-rectangle-in-histogram/question?list=neetcode150)
 
-<li> Trees (15 Problems)
-<ol type="1">
-Key problems include Invert Binary Tree, Max Depth, Diameter, Balanced Binary Tree, Same Tree, Subtree, LCA of BST, Level Order Traversal, Right Side View, Good Nodes, Validate BST, Kth Smallest, and Construct Tree. 
-</ol>
+5. Binary Search
+    1. Binary Search (Easy)
+    2. Search a 2D Matrix (Medium)
+    3. Koko Eating Bananas (Medium)
+    4. Find Minimum in Rotated Sorted Array (Medium)
+    5. Search in Rotated Sorted Array (Medium)
+    6. Time Based Key Value Store (Medium)
+    7. Median of Two Sorted Array (Hard)
+       
+5. Linked List (11 Problems)
+    1. Reverse Linked List (Easy)
+    2. Merge Two Sorted Lists (Easy)
+    3. Linked List Cycle (Easy)
+    4. Reorder List (Medium)
+    5. Remove Nth Node From End of List (Medium)
+    6. Copy List with Random Pointer (Medium)
+    7. Add Two Numbers (Medium)
+    8. Find the Duplicate Number (Medium)
+    9. LRU Cache (Medium)
+    10. Reverse Nodes in k-Group (Hard)
+    11. Merge k Sorted Lists (Hard)
+
+6. Trees (15 Problems)
+    1. Invert Binary Tree (Easy)
+    2. Maximum Depth, Diameter (Easy)
+    3. Diameter Of Binary Tree (Easy)
+    4. Balanced Binary Tree (Easy)
+    5. Same Tree (Easy)
+    6. Subtree of Another Tree (Easy)
+    7. LCA of BST (Medium)
+    8. Binary Tree Level Order Traversal (Medium)
+    9. Binary Tree Right Side View (Medium)
+    10. Count Good Nodes in Binary Tree (Medium)
+    11. Validate Binary Search Tree (Medium)
+    12. Level Order Traversal (Medium)
+    13. Kth Smallest, and Construct Tree  (Medium)
+    14. Construct Binary Tree From Preorder And Inorder Traversal  (Medium)
+    15. Binary Tree Maximum Path Sum (Hard)
+    16. Serialze And Deserizlize Binary Tree (Hard)
+
 
 <li> Tries (3 Problems)
 
