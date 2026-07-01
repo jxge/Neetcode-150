@@ -107,25 +107,3 @@ int main() {
     
     return 0;
 }
-
-
-// Driver program to test the solution
-int main() {
-    Solution solver;
-    
-    // Example test case
-    vector<int> nums = {1, 2, 1, 0, 4, 2, 6};
-    int k = 3;
-    
-    vector<int> result = solver.maxSlidingWindow(nums, k);
-    
-    // Print the output
-    cout << "Output: [";
-    for (size_t i = 0; i < result.size(); ++i) {
-        cout << result[i];
-        if (i < result.size() - 1) cout << ", ";
-    }
-    cout << "]" << endl;
-    
-    return 0;
-}
