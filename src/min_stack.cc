@@ -8,7 +8,74 @@ using namespace std;
 #include <iostream>
 #include <vector>
 
+// Solution 1: Using Encoding
+
+#include <iostream>
+#include <vector>
+#include <climits>
+
 using namespace std;
+#include <iostream>
+#include <vector>
+#include <climits>
+
+using namespace std;
+
+class MinStack {
+private:
+    vector<long long> st;
+    long long current_min;
+
+public:
+    MinStack() {
+        current_min = LLONG_MAX;
+    }
+    
+    void push(int val) {
+        if (st.empty()) {
+            st.push_back(val);
+            current_min = val;
+        } else if (val >= current_min) {
+            // If it's larger or equal, push the raw value
+            st.push_back(val);
+        } else {
+            // val < current_min  --> 2*val - current_min < val
+            // encoded = 2 * val - current_min
+            st.push_back(2LL * val - current_min);
+            current_min = val; // Update the minimum variable, current_min > top()
+        }
+    }
+    void pop() {
+        if (st.empty()) return;
+        
+        long long top_val = st.back();
+        
+        // Invariant Rule: If the value stored in the stack is less than 
+        // the current minimum, it represents an encoded boundary marker.
+        if (top_val < current_min) {
+            // Decode and restore the previous minimum value
+            current_min = 2 * current_min - top_val;
+        }
+        st.pop_back();
+    }   
+
+    
+    int top() {
+        long long top_val = st.back();
+        // If it's a boundary flag, the true value is the current minimum
+        if (top_val < current_min) {
+            return current_min;
+        }
+        return top_val;
+    }
+    
+    int getMin() {
+        return current_min;
+    }
+};
+
+
+
 
 // Solution 1: Using 2 stacks
 class MinStack {
