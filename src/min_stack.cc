@@ -5,6 +5,50 @@
 
 using namespace std;
 
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+// Solution 1: Using 2 stacks
+class MinStack {
+private:
+    vector<int> data_stack;
+    // Stores pairs of {minimum_value, duplicate_count}
+    vector<pair<int, int>> min_stack; 
+
+public:
+    MinStack() {}
+    
+    void push(int val) {
+        data_stack.push_back(val);
+        
+        // Strict '<' condition used here
+        if (min_stack.empty() || val < min_stack.back().first) {
+            min_stack.push_back({val, 1}); // New minimum discovered
+        } else if (val == min_stack.back().first) {
+            min_stack.back().second++;     // Increment frequency count for duplicate
+        }
+    }
+    
+    void pop() {
+        // If the item leaving matches our current minimum
+        if (data_stack.back() == min_stack.back().first) {
+            min_stack.back().second--; // Decrement the duplicate count
+            
+            // If no more duplicates of this minimum remain, remove it entirely
+            if (min_stack.back().second == 0) {
+                min_stack.pop_back();
+            }
+        }
+        data_stack.pop_back();
+    }
+    
+    int top() { return data_stack.back(); }
+    int getMin() { return min_stack.back().first; }
+};
+
+// Solution 2: Using one stack
 class MinStack {
 private:
     // Pair structure: {element_value, minimum_value_at_this_level}
