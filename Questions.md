@@ -28,7 +28,7 @@
        [Solution](src/longest_repeating_char_replacement.cc)
     4. [Permutation in String (Medium)](https://neetcode.io/problems/permutation-string/question?list=neetcode150) -- [Solution](src/.cc)
     5. [Minimum Window Substring (Hard)](https://neetcode.io/problems/minimum-window-with-characters/question?list=neetcode150) -- [Solution](src/.cc)
-    6. [Sliding Window Maximum (Hard)](https://neetcode.io/problems/sliding-window-maximum/question?list=neetcode150) -- [Solution](src/.cc)
+    6. [Sliding Window Maximum (Hard)](https://neetcode.io/problems/sliding-window-maximum/question?list=neetcode150) -- [Solution](src/sliding_window_maximum.cc)
   
 <li> Stack (7 Questions)
   <ol type="1">
