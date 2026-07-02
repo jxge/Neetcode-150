@@ -32,16 +32,17 @@
   
 4. Stack (7 Questions)
     1. [Valid Parentheses (Easy)](https://neetcode.io/problems/validate-parentheses/question?list=neetcode150) -
-       [Solution](src/.cc)
+       [Solution](src/valid_palindrome.cc)
     2. [Min Stack (Medium)](https://neetcode.io/problems/minimum-stack/question?list=neetcode150) - 
-       [Solution](src/.cc)
+       [Solution](src/min_stack.cc)
     3. [Evaluate Reverse Polish Notation (Medium)](https://neetcode.io/problems/evaluate-reverse-polish-notation/question?list=neetcode150) - 
-       [Solution](src/.cc)
+       [Solution](src/evaluate_reverse_polish_expr.cc)
     4. [Daily Temperatures (Medium)](https://neetcode.io/problems/daily-temperatures/question?list=neetcode150) -
-       [Solution](src/.cc)
+       [Solution](src/daily_temperature.cc)
     5. [Car Fleet (Medium)Largest Rectangle in Histogram (Hard)](https://neetcode.io/problems/car-fleet/question?list=neetcode150) - 
-       [Solution](src/.cc)
+       [Solution](src/car_fleet.cc)
     6. [Largest Rectangle In Histogram](https://neetcode.io/problems/largest-rectangle-in-histogram/question?list=neetcode150)
+       [Solution](src/largest_rectangle_in_histogram)
 
 5. Binary Search
     1. Binary Search (Easy)
