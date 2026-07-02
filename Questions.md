@@ -42,7 +42,7 @@
     5. [Car Fleet (Medium)Largest Rectangle in Histogram (Hard)](https://neetcode.io/problems/car-fleet/question?list=neetcode150) - 
        [Solution](src/car_fleet.cc)
     6. [Largest Rectangle In Histogram](https://neetcode.io/problems/largest-rectangle-in-histogram/question?list=neetcode150)
-       [Solution](src/largest_rectangle_in_histogram)
+       [Solution](src/largest_rectangle_in_histogram.cc)
 
 5. Binary Search
     1. Binary Search (Easy)
