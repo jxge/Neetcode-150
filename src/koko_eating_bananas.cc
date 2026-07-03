@@ -5,7 +5,10 @@
 
 // Time: O(n * log(m)), where n is the number of piles, and m is the maximal number of bananas in each pile
 // The minimum possible eating rate is 1 banana/hour, and the maximum possible eating rate is m.
-//
+// Possible improvements:
+//   1. minimum possible rate = ceiling(total bananas / h)
+//   2. Frequency compression: compress duplicates into {pile_size, frequency} pairs.
+// 
 class Solution {
 private:
     // Helper function to check if rate 'k' is sufficient to eat all bananas within 'h' hours
@@ -45,6 +48,81 @@ public:
         return result;
     }
 };
+
+
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <numeric>
+#include <cmath>
+
+class Solution2 {
+public:
+    [[nodiscard]] int minEatingSpeed(const std::vector<int>& piles, int h) const noexcept {
+        long long total_bananas = 0;
+        int max_pile = 0;
+
+        // Step 1: Track frequencies of pile sizes using a bucket approach
+        // Given constraints (piles.length <= 1,000), a frequency array reduces 
+        // the check loop size from 'n' down to unique elements.
+        for (const int pile : piles) {
+            total_bananas += pile;
+            if (pile > max_pile) {
+                max_pile = pile;
+            }
+        }
+
+        // Step 2: Establish a tight mathematical lower bound
+        // Koko cannot eat faster than max_pile, and mathematically cannot eat 
+        // slower than (total_bananas / h) rounded up.
+        int left = static_cast<int>((total_bananas + h - 1) / h);
+        if (left == 0) left = 1;
+        
+        int right = max_pile;
+        int result = right;
+
+        // Pre-count frequencies of each pile size to compress the search footprint
+        // Using a sorted unique list allows us to treat duplicate piles instantly
+        std::vector<int> unique_piles = piles;
+        std::sort(unique_piles.begin(), unique_piles.end());
+
+        // Create pairs of {pile_size, frequency}
+        std::vector<std::pair<int, int>> compressed_piles;
+        for (size_t i = 0; i < unique_piles.size();) {
+            size_t j = i;
+            while (j < unique_piles.size() && unique_piles[j] == unique_piles[i]) {
+                j++;
+            }
+            compressed_piles.emplace_back(unique_piles[i], static_cast<int>(j - i));
+            i = j;
+        }
+
+        // Step 3: Binary search over the narrowed search space
+        while (left <= right) {
+            int mid = left + ((right - left) >> 1);
+            long long hours_needed = 0;
+            bool valid = true;
+
+            for (const auto& [pile_size, count] : compressed_piles) {
+                hours_needed += static_cast<long long>((pile_size + mid - 1) / mid) * count;
+                if (hours_needed > h) {
+                    valid = false;
+                    break; // Early exit optimization
+                }
+            }
+
+            if (valid) {
+                result = mid;
+                right = mid - 1; // Try slower speed
+            } else {
+                left = mid + 1;  // Must go faster
+            }
+        }
+
+        return result;
+    }
+};
+
 
 int main() {
     // Fast I/O optimization
