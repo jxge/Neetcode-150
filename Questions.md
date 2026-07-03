@@ -41,17 +41,24 @@
        [Solution](src/daily_temperature.cc)
     5. [Car Fleet (Medium)Largest Rectangle in Histogram (Hard)](https://neetcode.io/problems/car-fleet/question?list=neetcode150) - 
        [Solution](src/car_fleet.cc)
-    6. [Largest Rectangle In Histogram](https://neetcode.io/problems/largest-rectangle-in-histogram/question?list=neetcode150)
+    6. [Largest Rectangle In Histogram](https://neetcode.io/problems/largest-rectangle-in-histogram/question?list=neetcode150) - 
        [Solution](src/largest_rectangle_in_histogram.cc)
 
 5. Binary Search
-    1. Binary Search (Easy)
-    2. Search a 2D Matrix (Medium)
-    3. Koko Eating Bananas (Medium)
-    4. Find Minimum in Rotated Sorted Array (Medium)
-    5. Search in Rotated Sorted Array (Medium)
-    6. Time Based Key Value Store (Medium)
-    7. Median of Two Sorted Array (Hard)
+    1. [Binary Search (Easy)](https://neetcode.io/problems/binary-search/question?list=neetcode150) -
+       [Solution](.cc)
+    2. [Search a 2D Matrix (Medium)](https://neetcode.io/problems/search-2d-matrix/question?list=neetcode150) - 
+       [Solution](src/*.cc)
+    3. [Koko Eating Bananas (Medium)](https://neetcode.io/problems/eating-bananas/question?list=neetcode150) - 
+       [Solution](src/*.cc)
+    4. [Find Minimum in Rotated Sorted Array (Medium)](https://neetcode.io/problems/find-minimum-in-rotated-sorted-array/question?list=neetcode150) - 
+       [Solution](src/*.cc)
+    5. [Search in Rotated Sorted Array (Medium)](https://neetcode.io/problems/find-target-in-rotated-sorted-array/question?list=neetcode150) - 
+       [Solution](src/*.cc)
+    6. [Time Based Key Value Store (Medium)](https://neetcode.io/problems/time-based-key-value-store/question?list=neetcode150) - 
+       [Solution](src/*.cc)
+    7. M[edian of Two Sorted Array (Hard)](https://neetcode.io/problems/median-of-two-sorted-arrays/question?list=neetcode150) - 
+       [Solution](src/*.cc)
        
 5. Linked List (11 Problems)
     1. Reverse Linked List (Easy)
