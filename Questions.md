@@ -46,13 +46,13 @@
 
 5. Binary Search
     1. [Binary Search (Easy)](https://neetcode.io/problems/binary-search/question?list=neetcode150) -
-       [Solution](.cc)
+       [Solution](binary_search.cc)
     2. [Search a 2D Matrix (Medium)](https://neetcode.io/problems/search-2d-matrix/question?list=neetcode150) - 
-       [Solution](src/*.cc)
+       [Solution](src/search_2d_matrix.cc)
     3. [Koko Eating Bananas (Medium)](https://neetcode.io/problems/eating-bananas/question?list=neetcode150) - 
-       [Solution](src/*.cc)
+       [Solution](src/koko_eating_bananas.cc)
     4. [Find Minimum in Rotated Sorted Array (Medium)](https://neetcode.io/problems/find-minimum-in-rotated-sorted-array/question?list=neetcode150) - 
-       [Solution](src/*.cc)
+       [Solution](find_min_in_rotated_array/*.cc)
     5. [Search in Rotated Sorted Array (Medium)](https://neetcode.io/problems/find-target-in-rotated-sorted-array/question?list=neetcode150) - 
        [Solution](src/*.cc)
     6. [Time Based Key Value Store (Medium)](https://neetcode.io/problems/time-based-key-value-store/question?list=neetcode150) - 
