@@ -54,11 +54,11 @@
     4. [Find Minimum in Rotated Sorted Array (Medium)](https://neetcode.io/problems/find-minimum-in-rotated-sorted-array/question?list=neetcode150) - 
        [Solution](src/find_min_in_rotated_array/*.cc)
     5. [Search in Rotated Sorted Array (Medium)](https://neetcode.io/problems/find-target-in-rotated-sorted-array/question?list=neetcode150) - 
-       [Solution](src/*.cc)
+       [Solution](src/search_in_rotated_sorted_array.cc)
     6. [Time Based Key Value Store (Medium)](https://neetcode.io/problems/time-based-key-value-store/question?list=neetcode150) - 
-       [Solution](src/*.cc)
+       [Solution](src/time_based_key_value_store.cc)
     7. M[edian of Two Sorted Array (Hard)](https://neetcode.io/problems/median-of-two-sorted-arrays/question?list=neetcode150) - 
-       [Solution](src/*.cc)
+       [Solution](src/median_of_two_sorted_arrays.cc)
        
 5. Linked List (11 Problems)
     1. Reverse Linked List (Easy)
