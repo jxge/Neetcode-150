@@ -80,7 +80,7 @@
     9. [LRU Cache (Medium)](https://neetcode.io/problems/lru-cache/question?list=neetcode150) -
        [Solution](src/lru_cache.cc)
     10. [Merge k Sorted Lists (Hard)](https://neetcode.io/problems/merge-k-sorted-linked-lists/question?list=neetcode150) -
-       [Solution](src/merge_k_sorted_linked_list.cc)
+       [Solution](src/merge_k_sorted_linked_lists.cc)
     11. [Reverse Nodes in k-Group (Hard)](https://neetcode.io/problems/reverse-nodes-in-k-group/question?list=neetcode150) -
        [Solution](src/reverse_nodes_in_k_group.cc)
 
