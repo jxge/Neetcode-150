@@ -62,27 +62,27 @@
        
 5. Linked List (11 Problems)
     1. [Reverse Linked List (Easy)](https://neetcode.io/problems/reverse-a-linked-list/question?list=neetcode150) -
-       [Solution](src/.cc)
+       [Solution](src/reverse_linked_list.cc)
     2. [Merge Two Sorted Lists (Easy)](https://neetcode.io/problems/merge-two-sorted-linked-lists/question?list=neetcode150) -
-       [Solution](src/.cc)
+       [Solution](src/merge_two_sorted_linked_list.cc)
     3. [Linked List Cycle (Easy)](https://neetcode.io/problems/linked-list-cycle-detection/question?list=neetcode150) -
-       [Solution](src/.cc)
+       [Solution](src/linked_list_cycle_detection.cc)
     4. [Reorder List (Medium)](https://neetcode.io/problems/reorder-linked-list/question?list=neetcode150) -
-       [Solution](src/.cc)
+       [Solution](src/reorder_linked_list.cc)
     5. [Remove Nth Node From End of List (Medium)](https://neetcode.io/problems/remove-node-from-end-of-linked-list/question?list=neetcode150) -
-       [Solution](src/.cc)
+       [Solution](src/remove_nth_node_from_end_of_list.cc)
     6. [Copy List with Random Pointer (Medium)](https://neetcode.io/problems/copy-linked-list-with-random-pointer/question?list=neetcode150) -
-       [Solution](src/.cc)
+       [Solution](src/copy_linked_list_with_random_pointer.cc)
     7. [Add Two Numbers (Medium)](https://neetcode.io/problems/add-two-numbers/question?list=neetcode150) -
-       [Solution](src/.cc)
+       [Solution](src/add_two_numbers.cc)
     8. [Find the Duplicate Number (Medium)](https://neetcode.io/problems/find-duplicate-integer/question?list=neetcode150) -
-       [Solution](src/.cc)
+       [Solution](src/find_duplicate_number.cc)
     9. [LRU Cache (Medium)](https://neetcode.io/problems/lru-cache/question?list=neetcode150) -
        [Solution](src/.cc)
     10. [Merge k Sorted Lists (Hard)](https://neetcode.io/problems/merge-k-sorted-linked-lists/question?list=neetcode150) -
-       [Solution](src/.cc)
+       [Solution](src/merge_k_sorted_linked_list.cc)
     11. [Reverse Nodes in k-Group (Hard)](https://neetcode.io/problems/reverse-nodes-in-k-group/question?list=neetcode150) -
-       [Solution](src/.cc)
+       [Solution](src/reverse_nodes_in_k_group.cc)
 
 6. Trees (15 Problems)
     1. Invert Binary Tree (Easy)
