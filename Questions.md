@@ -78,7 +78,7 @@
     8. [Find the Duplicate Number (Medium)](https://neetcode.io/problems/find-duplicate-integer/question?list=neetcode150) -
        [Solution](src/find_duplicate_number.cc)
     9. [LRU Cache (Medium)](https://neetcode.io/problems/lru-cache/question?list=neetcode150) -
-       [Solution](src/.cc)
+       [Solution](src/lru_cache.cc)
     10. [Merge k Sorted Lists (Hard)](https://neetcode.io/problems/merge-k-sorted-linked-lists/question?list=neetcode150) -
        [Solution](src/merge_k_sorted_linked_list.cc)
     11. [Reverse Nodes in k-Group (Hard)](https://neetcode.io/problems/reverse-nodes-in-k-group/question?list=neetcode150) -
