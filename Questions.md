@@ -87,7 +87,7 @@
 6. Trees (15 Problems)
     1. [Invert Binary Tree (Easy)](https://neetcode.io/problems/invert-a-binary-tree/question?list=neetcode150) -
        [Solution](src/.cc)
-    2. [Maximum Depth of Binary Tree(Easy)]() -
+    2. [Maximum Depth of Binary Tree(Easy)](https://neetcode.io/problems/depth-of-binary-tree/question?list=neetcode150) -
        [Solution](src/.cc)
     3. [Diameter Of Binary Tree (Easy)](https://neetcode.io/problems/binary-tree-diameter/question?list=neetcode150) -
        [Solution](src/.cc)
