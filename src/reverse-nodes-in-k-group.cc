@@ -9,6 +9,63 @@ struct ListNode {
     ListNode(int x) : val(x), next(nullptr) {}
     ListNode(int x, ListNode *next) : val(x), next(next) {}
 };
+struct ListNode {
+    int val;
+    ListNode *next;
+    ListNode() : val(0), next(nullptr) {}
+    ListNode(int x) : val(x), next(nullptr) {}
+    ListNode(int x, ListNode *next) : val(x), next(next) {}
+};
+
+class Solution {
+private:
+    // Finds the k-th node from the current head
+    [[nodiscard]] ListNode* getKthNode(ListNode* curr, int k) const noexcept {
+        while (curr != nullptr && k > 1) {
+            curr = curr->next;
+            k--;
+        }
+        return curr;
+    }
+    
+    // Reverses a sub-list in place and returns its new head
+    [[nodiscard]] ListNode* reverse(ListNode* curr) const noexcept {
+        ListNode* prev = nullptr;
+        while (curr != nullptr) {
+            ListNode *next_node = curr->next;
+            curr->next = prev;
+            prev = curr;
+            curr = next_node;
+        }
+        return prev;
+    }
+
+public:
+    ListNode* reverseKGroup(ListNode* head, int k) const noexcept {
+        if (head == nullptr || k == 1) return head;
+
+        // Dummy node removes the need for separate 'if (group_tail)' logic blocks
+        ListNode dummy(0);
+        ListNode* tail = &dummy;
+
+        while (head != nullptr) {
+            ListNode* kth_node = getKthNode(head, k);
+            if (kth_node == nullptr) {
+                tail->next = head; // Append the remaining unreversed segment
+                break;
+            }
+
+            ListNode* next_group_head = kth_node->next;
+            kth_node->next = nullptr; // Temporarily isolate the current group
+
+            tail->next = reverse(head); // Connect the previous tail to the new group head
+            tail = head;                // 'head' is now the tail of this reversed group
+            head = next_group_head;     // Advance to the next group
+        }
+
+        return dummy.next;
+    }
+};
 
 class Solution {
 private:
