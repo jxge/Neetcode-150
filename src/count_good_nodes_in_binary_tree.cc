@@ -7,6 +7,9 @@
 /*******************************************************************************************
 To count the number of "good" nodes in a binary tree, we will pass the maximum value
 seen so during a Depth-First Search (DFS) traversal.
+
+Solution 1: recursive DFS
+Solution 2: interative DFS
 *******************************************************************************************/
 // Definition for a binary tree node.
 struct TreeNode {
@@ -18,7 +21,7 @@ struct TreeNode {
     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
 };
 
-class Solution {
+class Solution1 {
 private:
     int dfs(TreeNode* node, int maxSoFar) {
         if (node == nullptr) {
@@ -51,7 +54,44 @@ public:
     }
 };
 
-// --- Driver Code Functions ---
+class Solution2 {
+public:
+    int goodNodes(TreeNode* root) {
+        if (root == nullptr) {
+            return 0;
+        }
+
+        int goodNodesCount = 0;
+        
+        // Stack stores pairs of: {Current Node, Maximum value seen so far on this path}
+        std::stack<std::pair<TreeNode*, int>> s;
+        s.push({root, root->val});
+
+        while (!s.empty()) {
+            auto [curr, maxSoFar] = s.top();
+            s.pop();
+
+            // A node is "good" if its value is >= the maximum value seen on its path
+            if (curr->val >= maxSoFar) {
+                goodNodesCount++;
+            }
+
+            // Update the running maximum value for the children paths
+            int nextMax = std::max(maxSoFar, curr->val);
+
+            // Push the right child first so that the left child is processed first (standard DFS order)
+            if (curr->right != nullptr) {
+                s.push({curr->right, nextMax});
+            }
+            if (curr->left != nullptr) {
+                s.push({curr->left, nextMax});
+            }
+        }
+
+        return goodNodesCount;
+    }
+};
+
 
 // Helper function to build a tree from a level-order vector containing optional values
 TreeNode* insertLevelOrder(const std::vector<std::optional<int>>& arr) {
