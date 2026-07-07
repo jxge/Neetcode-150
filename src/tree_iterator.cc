@@ -118,6 +118,11 @@ private:
     }
 };
 
+// ============================================================
+// BFS-order: layer by layer
+// Key idea: FIFO using queue
+// ============================================================
+class PreOrderIterator {
 class BfsIterator {
 public:
     explicit BfsIterator(TreeNode* root) {
