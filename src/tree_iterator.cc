@@ -118,5 +118,28 @@ private:
     }
 };
 
+class BfsIterator {
+public:
+    explicit BfsIterator(TreeNode* root) {
+        if (root) {
+            queue_.push(root);
+        }
+    }
+    bool hasNext() const {
+        return !queue_.empty();
+    }
+    TreeNode* next() {
+        if (!hasNext()) {
+            return nullptr;
+        }
+        TreeNode* node = queue_.front();
+        queue_.pop();
+        if (node->left)  queue_.push(node->left);
+        if (node->right) queue_.push(node->right);
+        return node;
+    }
+private:
+    std::queue<TreeNode*> queue_;
+};
 
 
