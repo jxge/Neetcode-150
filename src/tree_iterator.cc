@@ -95,12 +95,13 @@ public:
             // If right subtree exists and isn't processed, traverse it
             if (cur->right && cur->right != lastVisited_) {
                 pushLeftPath(cur->right);
-            } else {
-                // Both subtrees are processed, safe to pop and return
-                stack_.pop();
-                lastVisited_ = cur;
-                return cur;
+                continue;
             }
+            
+            // Both subtrees are processed, safe to pop and return
+            stack_.pop();
+            lastVisited_ = cur;
+            return cur;
         }
         return nullptr;
     }
