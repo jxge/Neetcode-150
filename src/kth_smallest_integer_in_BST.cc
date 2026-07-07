@@ -1,7 +1,11 @@
 /************************************************************************************************
+Solution 1 (recursive in-order traversal):
 The k-th smallest value in a Binary Search Tree (BST) can be found efficiently by performing an 
 in-order traversal, which visits the nodes in ascending order. By maintaining a counter during 
 the traversal, we can stop and return the node's value as soon as we visit the k-th node.
+
+Solution 2 (iterative in-order traversal):
+An iterative approach uses a custom stack to simulate the recursion stack.
 *************************************************************************************************/
 
 #include <iostream>
