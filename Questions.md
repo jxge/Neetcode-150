@@ -117,17 +117,49 @@
         [Solution](src/serialize_and_deserialize_binary_tree.cc)
     17. Tree Iterator - [Solution](src/tree_iterator.cc)
 
-<li> Tries (3 Problems)
+7. Heap / Priority Queue
+    1. [Kth Largest Element In a Stream (Easy)](https://neetcode.io/problems/kth-largest-integer-in-a-stream/question?list=neetcode150) -
+       [Solution](src/.cc)
+    3. [Last Stone Weight (Easy)](https://neetcode.io/problems/last-stone-weight/question?list=neetcode150) -
+       [Solution](src/.cc)
+    4. [K Closest Points to Origin (Medium)](https://neetcode.io/problems/k-closest-points-to-origin/question?list=neetcode150) -
+       [Solution](src/.cc)
+    5. [Kth Largest Element In An Array (Medium)](https://neetcode.io/problems/kth-largest-element-in-an-array/question?list=neetcode150) -
+       [Solution](src/.cc)
+    6. [Task Scheduler (Medium)](https://neetcode.io/problems/task-scheduling/question?list=neetcode150) -
+       [Solution](src/.cc)
+    7. [Design Twitter (Medium)](https://neetcode.io/problems/design-twitter-feed/question?list=neetcode150) -
+       [Solution](src/.cc)
+    8. [Find Median From Data Stream (Hard)](https://neetcode.io/problems/find-median-in-a-data-stream/question?list=neetcode150) -
+       [Solution](src/.cc)
+	
+8. Backtracking
+    1. [Subsets (Medium)](https://neetcode.io/problems/subsets/question?list=neetcode150) -
+       [Solution](src/.cc)
+    2. [Combination Sum (Medium)](https://neetcode.io/problems/combination-target-sum/question?list=neetcode150) -
+       [Solution](src/.cc)
+    3. [Combination Sum II (Medium)](https://neetcode.io/problems/combination-target-sum-ii/question?list=neetcode150) -
+       [Solution](src/.cc)
+    4. [Permutations (Medium)](https://neetcode.io/problems/permutations/question?list=neetcode150) -
+       [Solution](src/.cc)
+    5. [Subsets II (Medium)](https://neetcode.io/problems/subsets-ii/question?list=neetcode150) -
+       [Solution](src/.cc)
+    6. [Gnerate Parentheses (Medium)](https://neetcode.io/problems/generate-parentheses/question?list=neetcode150) -
+       [Solution](src/.cc)
+    7. [Word Search (Medium)](https://neetcode.io/problems/search-for-word/question?list=neetcode150) -
+       [Solution](src/.cc)
+    8. [Palindrome Partitioning (Medium)](https://neetcode.io/problems/palindrome-partitioning/question?list=neetcode150) -
+       [Solution](src/.cc)
+    9. [Letter Combinations of a Phone Number (Medium)](https://neetcode.io/problems/combinations-of-a-phone-number/question?list=neetcode150) -
+       [Solution](src/.cc)
+    10. [N Queens (Hard)](https://neetcode.io/problems/n-queens/question?list=neetcode150) -
+       [Solution](src/.cc)
 
-
-
-<ol>
-  <li>First main item
-    <ol type="1">
-      <li>First nested item</li>
-      <li>Second nested item</li>
-    </ol>
-  </li>
-  <li>Second main item</li>
-</ol>
-</ol>
+9. Tries
+    1. [Implement Trie Prefix Tree (Medium)](https://neetcode.io/problems/implement-prefix-tree/question?list=neetcode150) -
+       [Solution](src/.cc)
+    2. [Design Add And Search Words Data Structure (Medium)]() -
+       [Solution](src/.cc)](https://neetcode.io/problems/design-word-search-data-structure/question?list=neetcode150) -
+       [Solution](src/.cc)
+    3. [Word Search II (Medium)](https://neetcode.io/problems/search-for-word-ii/question?list=neetcode150) -
+       [Solution](src/.cc)
