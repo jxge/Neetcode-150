@@ -86,37 +86,39 @@
 
 6. Trees (15 Problems)
     1. [Invert Binary Tree (Easy)](https://neetcode.io/problems/invert-a-binary-tree/question?list=neetcode150) -
-       [Solution](src/.cc)
+       [Solution](src/invert_binary_tree.cc)
     2. [Maximum Depth of Binary Tree(Easy)](https://neetcode.io/problems/depth-of-binary-tree/question?list=neetcode150) -
-       [Solution](src/.cc)
+       [Solution](src/maximum_depth_of_binary_tree.cc)
     3. [Diameter Of Binary Tree (Easy)](https://neetcode.io/problems/binary-tree-diameter/question?list=neetcode150) -
-       [Solution](src/.cc)
+       [Solution](src/diameter_of_binary_tree.cc)
     4. [Balanced Binary Tree (Easy)](https://neetcode.io/problems/balanced-binary-tree/question?list=neetcode150) -
-       [Solution](src/.cc)
+       [Solution](src/balanced_binary_tree.cc)
     5. [Same Tree (Easy)](https://neetcode.io/problems/same-binary-tree/question?list=neetcode150) -
-       [Solution](src/.cc)
+       [Solution](src/same_tree.cc)
     6. [Subtree of Another Tree (Easy)](https://neetcode.io/problems/subtree-of-a-binary-tree/question?list=neetcode150) -
-       [Solution](src/.cc)
+       [Solution](src/subtree_of_another_tree.cc)
     7. [LCA of BST (Medium)](https://neetcode.io/problems/lowest-common-ancestor-in-binary-search-tree/question?list=neetcode150) -
-       [Solution](src/.cc)
+       [Solution](src/lowest_common_ancestor.cc)
     8. [Binary Tree Level Order Traversal (Medium)](https://neetcode.io/problems/level-order-traversal-of-binary-tree/question?list=neetcode150) -
-       [Solution](src/.cc)
+       [Solution](src/binary_tree_level_order_traversal.cc)
     9. [Binary Tree Right Side View (Medium)](https://neetcode.io/problems/binary-tree-right-side-view/question?list=neetcode150) -
-       [Solution](src/.cc)
+       [Solution](src/binary_tree_right_side_view.cc)
     10. [Count Good Nodes in Binary Tree (Medium)](https://neetcode.io/problems/count-good-nodes-in-binary-tree/question?list=neetcode150) -
-       [Solution](src/.cc)
+        [Solution](src/count_good_nodes_in_binary_tree.cc)
     11. [Validate Binary Search Tree (Medium)]() -
-       [Solution](src/.cc)
+        [Solution](src/valid_binary_search_tree.cc)
     12. [Level Order Traversal (Medium)]() -
-       [Solution](src/.cc)
+        [Solution](src/level_order_traversal.cc)
     13. [Kth Smallest, and Construct Tree  (Medium)](https://neetcode.io/problems/kth-smallest-integer-in-bst/question?list=neetcode150) -
-       [Solution](src/.cc)
+        [Solution](src/kth_smallest_integer_in_BST.cc)
     14. [Construct Binary Tree From Preorder And Inorder Traversal  (Medium)](https://neetcode.io/problems/binary-tree-from-preorder-and-inorder-traversal/question?list=neetcode150) -
-       [Solution](src/.cc)
+        [Solution](src/construct_binary_tree_from_preorder_inorder.cc)
     15. [Binary Tree Maximum Path Sum (Hard)](https://neetcode.io/problems/binary-tree-maximum-path-sum/question?list=neetcode150) -
-       [Solution](src/.cc)
+        [Solution](src/binary_tree_maximum_path_sum.cc)
     16. [Serialze And Deserizlize Binary Tree (Hard)](https://neetcode.io/problems/serialize-and-deserialize-binary-tree/question?list=neetcode150) -
-       [Solution](src/.cc)
+        [Solution](src/.cc)
+    17. Tree Iterator - [Solution](src/tree_iterator.cc)
+   
 
 
 <li> Tries (3 Problems)
