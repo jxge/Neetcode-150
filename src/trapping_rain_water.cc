@@ -17,8 +17,8 @@ Solution 1: Two pointers (Optimimal)
   the left bar. Symmetric logic for the right side.
 
 Solution 2: Stack based apporach
-  Keep a stack of indices whose heights are monotonically decreasing. When we 
-  hit a bar taller than the top of the stack, that bar becomes a right wall. 
+  Keep a stack of indices whose heights are monotonically decreasing. When we
+  hit a bar taller than the top of the stack, that bar becomes a right wall.
   The popped bar is the valley floor (bottom), and the new stack top is the
   left wall. Water sits in the rectangle between them:
     width = i - left - 1
@@ -37,7 +37,7 @@ Solution 3: Prefix / Suffix method
 Complexity:
   Method               Time  Space Passes    Extra Memory
   ---------------------------------------------------------
-  Prefix/Suffix array  O(N)  O(N)  3         2 arrays of size n  
+  Prefix/Suffix array  O(N)  O(N)  3         2 arrays of size n
   Two Pointer          O(N)  O(1)  1         a few scalars
   Monotonic Stack      O(N)  O(N)  1         1 stack of size n
 ******************************************************************************/
@@ -134,11 +134,10 @@ void printVector(const vector<int>& vec) {
     }
     cout << "]";
 }
-
 // Driver Code
 int main() {
     Solution solver;
-    
+
     // Test Case 1: Standard case from problem text
     //vector<int> height1 = {0, 2, 0, 3, 1, 0, 1, 3, 2, 1};
     vector<int> height1 = {4,2,1,3,5,4};
@@ -166,3 +165,4 @@ int main() {
 
     return 0;
 }
+                                                              16
