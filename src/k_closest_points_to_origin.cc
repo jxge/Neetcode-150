@@ -21,7 +21,7 @@ function select(list, left, right, k) is
     if k = pivotIndex then
         return list[k]
     else if k < pivotIndex then
-        return select(list, left, pivotIndex − 1, k)
+        return select(list, left, pivotIndex - 1, k)
     else
         return select(list, pivotIndex + 1, right, k) 
 Space Complexity: O(1)
