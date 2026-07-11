@@ -38,10 +38,10 @@ public:
 
         // Step 3: Calculate the minimum execution time required based on max_freq
         // The most frequent task creates chunks of size (n + 1)
-        int min_cycles = (max_freq - 1) * (n + 1);
+        int min_cycles = (max_freq - 1) * (n + 1) + 1;
 
         // Step 4: Add the number of tasks that share this same maximum frequency
-        for (int i = 25; i >= 0; i--) {
+        for (int i = 24; i >= 0; i--) {
             if (frequencies[i] == max_freq) {
                 min_cycles++;
             } else {
