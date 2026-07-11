@@ -119,19 +119,19 @@
 
 7. Heap / Priority Queue
     1. [Kth Largest Element In a Stream (Easy)](https://neetcode.io/problems/kth-largest-integer-in-a-stream/question?list=neetcode150) -
-       [Solution](src/.cc)
+       [Solution](src/kth_largest_element.cc)
     3. [Last Stone Weight (Easy)](https://neetcode.io/problems/last-stone-weight/question?list=neetcode150) -
-       [Solution](src/.cc)
+       [Solution](src/last_stone_weight.cc)
     4. [K Closest Points to Origin (Medium)](https://neetcode.io/problems/k-closest-points-to-origin/question?list=neetcode150) -
-       [Solution](src/.cc)
+       [Solution](src/k_closest_points_to_origin.cc)
     5. [Kth Largest Element In An Array (Medium)](https://neetcode.io/problems/kth-largest-element-in-an-array/question?list=neetcode150) -
-       [Solution](src/.cc)
+       [Solution](src/kth_largest_element_in_array.cc)
     6. [Task Scheduler (Medium)](https://neetcode.io/problems/task-scheduling/question?list=neetcode150) -
-       [Solution](src/.cc)
+       [Solution](src/task_scheduler.cc)
     7. [Design Twitter (Medium)](https://neetcode.io/problems/design-twitter-feed/question?list=neetcode150) -
-       [Solution](src/.cc)
+       [Solution](src/design_twitter.cc)
     8. [Find Median From Data Stream (Hard)](https://neetcode.io/problems/find-median-in-a-data-stream/question?list=neetcode150) -
-       [Solution](src/.cc)
+       [Solution](src/find_median_from_data_stream.cc)
 	
 8. Backtracking
     1. [Subsets (Medium)](https://neetcode.io/problems/subsets/question?list=neetcode150) -

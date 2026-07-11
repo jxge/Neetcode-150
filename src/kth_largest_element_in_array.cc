@@ -1,46 +1,37 @@
-/***************************************************************
-Time Complexity:
-   Constructor: O(N log k) where N is the initial array size.
-   Add method: O(log k) per insertion.
-Space Complexity: O(k) to store up to k elements.
-***************************************************************/
 
+
+/* 
+ * Maintain a min-heap of size k. The smallest element in this heap will always stay at the top.
+ * Iteration: Loop through each number in the array.
+ *   - Push the current number into the min-heap.
+ *   - if the size of the heap exceeds \(k\), pop the top element.
+ */
 
 #include <iostream>
 #include <vector>
 #include <queue>
 
-class KthLargest {
-private:
-    // Min-heap to store the k largest elements
-    std::priority_queue<int, std::vector<int>, std::greater<int>> minHeap;
-    int maxSize;
-
+class Solution1 {
 public:
-    // Constructor initializes the heap with the k largest elements
-    KthLargest(int k, std::vector<int>& nums) {
-        maxSize = k;
+    int findKthLargest(std::vector<int>& nums, int k) {
+        // Create a min-heap to keep track of the k largest elements
+        std::priority_queue<int, std::vector<int>, std::greater<int>> min_heap;
+        
         for (int num : nums) {
-            add(num);
-        }
-    }
-    
-    // Adds a value and maintains the heap size at exactly k
-    int add(int val) {
-        minHeap.push(val);
-        
-        // If the heap exceeds size k, pop the smallest element
-        if (minHeap.size() > maxSize) {
-            minHeap.pop();
+            min_heap.push(num);
+            
+            // If the heap size exceeds k, remove the smallest element
+            if (min_heap.size() > k) {
+                min_heap.pop();
+            }
         }
         
-        // The top of the min-heap is the kth largest element
-        return minHeap.top();
+        // The top of the heap is now the kth largest element
+        return min_heap.top();
     }
 };
 
-
-class Solution1 {
+class Solution2 {
 private:
     // Standard Lomuto partition scheme
     int partition(std::vector<int>& nums, int left, int right) {
@@ -88,7 +79,7 @@ public:
 
 // Driver Program
 int main() {
-    Solution solution;
+    Solution solution1;
     
     // Example 1
     std::vector<int> nums1 = {2, 3, 1, 5, 4};
@@ -103,3 +94,20 @@ int main() {
     return 0;
 }
 
+
+// Driver Program
+int main() {
+    Solution solution;
+    
+    // Example 1
+    std::vector<int> nums1 = {2, 3, 1, 5, 4};
+    int k1 = 2;
+    std::cout << "Example 1 Output: " << solution.findKthLargest(nums1, k1) << std::endl; // Expected: 4
+    
+    // Example 2
+    std::vector<int> nums2 = {2, 3, 1, 1, 5, 5, 4};
+    int k2 = 3;
+    std::cout << "Example 2 Output: " << solution.findKthLargest(nums2, k2) << std::endl; // Expected: 4
+
+    return 0;
+}
