@@ -14,6 +14,18 @@ Solution 2: iterative
   (2) Find the successor – find the first j from the right so that A[j] > A[i] (such j exists since A[i] < A[i+1]).
   (3) Swap A[i] and A[j];
   (4) Reverse A[i+1] ... A[n-1]
+
+Solution 3: Using backtracking with a mask
+  P(A, res, mask)
+    (1) Base case: if (A.size() == res.size()) print (A); return
+    (2) for (i = 0; i < n; i++) 
+            if (!mask[i]) {
+                res += A[i];
+                mask[i]=1
+                P(A, res,mask);
+                res -= A[i];
+                mask[i]=0;
+            } 
 */
 
 #include <iostream>
@@ -104,6 +116,44 @@ public:
     }
 };
 
+#include <iostream>
+#include <vector>
+
+class Solution3 {
+private:
+    // FIX: 'perm' is now passed by reference (&) to eliminate vector copying overhead.
+    void backtrack(std::vector<int>& perm, const std::vector<int>& nums, int mask, std::vector<std::vector<int>>& res) {
+        // Base Case: If the temporary permutation matches the target size, save it
+        if (perm.size() == nums.size()) {
+            res.push_back(perm);
+            return;
+        }
+
+        for (int i = 0; i < nums.size(); i++) {
+            // Check if the ith bit is 0 (meaning nums[i] is not yet picked)
+            if (!(mask & (1 << i))) {
+                perm.push_back(nums[i]); // Action
+                
+                // Recurse: Mark the ith bit as 1 using the bitwise OR operator
+                backtrack(perm, nums, mask | (1 << i), res);
+                
+                perm.pop_back(); // Backtrack / Undo Action
+            }
+        }
+    }
+
+public:
+    std::vector<std::vector<int>> permute(std::vector<int>& nums) {
+        std::vector<std::vector<int>> res;
+        std::vector<int> perm;
+        
+        // std::sort(nums.begin(), nums.end()); sorting is not needed
+        // Start backtracking with an empty path and a mask of 0
+        backtrack(perm, nums, 0, res);
+        return res;
+    }
+};
+
 // Helper function to print permutation structures clearly
 void printResult(const std::vector<std::vector<int>>& result) {
     std::cout << "[";
@@ -123,6 +173,7 @@ void printResult(const std::vector<std::vector<int>>& result) {
 int main() {
     Solution1 sol1;
     Solution2 sol2;
+    Solution3 sol3;
     std::vector<std::vector<int>> res;
 
     // Example 1
@@ -131,6 +182,8 @@ int main() {
     res = sol1.permute(nums1);
     printResult(res);
     res = sol2.permute(nums1);
+    printResult(res);
+    res = sol3.permute(nums1);
     printResult(res);
     
     std::cout << std::endl;
