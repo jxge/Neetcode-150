@@ -26,6 +26,8 @@ Solution 3: Using backtracking with a mask
                 res -= A[i];
                 mask[i]=0;
             } 
+
+Solution 4: Heap's algorithm
 */
 
 #include <iostream>
@@ -147,12 +149,55 @@ public:
         std::vector<std::vector<int>> res;
         std::vector<int> perm;
         
-        // std::sort(nums.begin(), nums.end()); sorting is not needed
+        std::sort(nums.begin(), nums.end()); // sorting is not needed
         // Start backtracking with an empty path and a mask of 0
         backtrack(perm, nums, 0, res);
         return res;
     }
 };
+
+class Solution4 {
+private:
+    void heapPermute(int k, std::vector<int>& nums, std::vector<std::vector<int>>& result) {
+        // Base Case: When the subproblem size drops to 1, the elements are fixed
+        // into a new, unique configuration. We save the array and return.
+        if (k == 1) {
+            result.push_back(nums);
+            return;
+        }
+
+        for (int i = 0; i < k; ++i) {
+            // Recursively generate permutations for the remaining prefix elements
+            heapPermute(k - 1, nums, result);
+
+            // If we are on the final iteration of this loop, skipping the swap 
+            // is a minor optimization since this layer has finished its work.
+            if (i < k - 1) {
+                // If k is ODD, always swap the first element with the last element.
+                // If k is EVEN, swap the element at the current loop index with the last element.
+                if (k % 2 == 1) {
+                    std::swap(nums[0], nums[k - 1]);
+                } else {
+                    std::swap(nums[i], nums[k - 1]);
+                }
+            }
+        }
+    }
+
+public:
+    std::vector<std::vector<int>> permute(std::vector<int>& nums) {
+        std::vector<std::vector<int>> result;
+        
+        if (nums.empty()) {
+            return result;
+        }
+
+        // Start Heap's algorithm with the full size of the array
+        heapPermute(nums.size(), nums, result);
+        return result;
+    }
+};
+
 
 // Helper function to print permutation structures clearly
 void printResult(const std::vector<std::vector<int>>& result) {
@@ -174,6 +219,7 @@ int main() {
     Solution1 sol1;
     Solution2 sol2;
     Solution3 sol3;
+    Solution4 sol4;
     std::vector<std::vector<int>> res;
 
     // Example 1
@@ -184,6 +230,8 @@ int main() {
     res = sol2.permute(nums1);
     printResult(res);
     res = sol3.permute(nums1);
+    printResult(res);
+    res = sol4.permute(nums1);
     printResult(res);
     
     std::cout << std::endl;
