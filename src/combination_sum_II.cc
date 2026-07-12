@@ -1,3 +1,8 @@
+/*
+ * Approach 1: Standard index skipping
+ *
+ * Apporach 2: Group based 
+ */
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -44,6 +49,70 @@ public:
         std::sort(candidates.begin(), candidates.end());
 
         // 2. Start backtracking from index 0
+        backtrack(0, target, candidates, current, result);
+        return result;
+    }
+};
+
+class Solution2 {
+private:
+    void backtrack(int i, int remainingTarget, const std::vector<int>& candidates,
+                   std::vector<int>& current, std::vector<std::vector<int>>& result) {
+        // Base Case 1: Target achieved
+        if (remainingTarget == 0) {
+            result.push_back(current);
+            return;
+        }
+
+        // Base Case 2: Out of bounds
+        if (i >= candidates.size()) {
+            return;
+        }
+
+        // Pruning Step, since the array is sorted in assending order
+        if (candidates[i] > remainingTarget) {
+            return;
+        }
+
+        // 1. Count how many times this specific number duplicates sequentially
+        int nextUniqueIndex = i + 1;
+        while (nextUniqueIndex < candidates.size() && candidates[i] == candidates[nextUniqueIndex]) {
+            nextUniqueIndex++;
+        }   
+        int duplicateCount = nextUniqueIndex - i;
+
+        // 2. Branch 1: Choose to use 0 copies of this element group
+        backtrack(nextUniqueIndex, remainingTarget, candidates, current, result);
+
+        // 3. Branch 2: Try using 1 copy, 2 copies, ... up to duplicateCount copies
+        int itemsPushed = 0;
+        for (int count = 1; count <= duplicateCount; count++) {
+            if (count * candidates[i] > remainingTarget) {
+                break; // Prune early if adding more copies exceeds target
+            }
+
+            current.push_back(candidates[i]);
+            itemsPushed++;
+
+            // Recurse directly to the next unique index group
+            backtrack(nextUniqueIndex, remainingTarget - (count * candidates[i]), candidates, current, result);
+        }
+
+        // 4. Backtrack/Clean up all copies added in this specific frame
+        for (int count = 0; count < itemsPushed; count++) {
+            current.pop_back();
+        }
+    }
+
+public:
+    std::vector<std::vector<int>> combinationSum2(std::vector<int>& candidates, int target) {
+        std::vector<std::vector<int>> result;
+        std::vector<int> current;
+
+        // Sorting is required to keep identical items contiguous
+        std::sort(candidates.begin(), candidates.end());
+
+        // Start recursion cleanly at index 0
         backtrack(0, target, candidates, current, result);
         return result;
     }
