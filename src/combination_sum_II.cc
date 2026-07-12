@@ -135,7 +135,7 @@ void printResult(const std::vector<std::vector<int>>& result) {
 
 // Driver Program
 int main() {
-    Solution solution;
+    Solution2 solution;
 
     // Example 1
     std::vector<int> candidates1 = {9, 2, 2, 4, 6, 1, 5};
