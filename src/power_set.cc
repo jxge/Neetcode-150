@@ -163,38 +163,41 @@ public:
 
 class Solution5 {
 private:
-    void generateSubsetsWithDup(int i, const std::vector<int>& nums, std::vector<int>& current, std::vector<std::vector<int>>& result) {
-        while (i < nums.size()) {
-            if (i > 0 && nums[i - 1] == nums[i]) {
-                // skip the duplicate
+    void generateSubsetsWithDup(int startIndex, const std::vector<int>& nums, std::vector<int>& current, std::vector<std::vector<int>>& result) {
+        // Base Case: Every valid state reached is a unique subset
+        result.push_back(current);
+
+        for (int i = startIndex; i < nums.size(); ++i) {
+            // FIX: Only skip duplicates if 'i' is beyond the starting point of THIS recursive call
+            if (i > startIndex && nums[i - 1] == nums[i]) {
                 continue;
             }
-            // Choice 1: Include the element at the current index
+
+            // Choice: Include the element at the current index
             current.push_back(nums[i]);
+            
+            // Recurse to find subsets with this element included
             generateSubsetsWithDup(i + 1, nums, current, result);
-            current.pop_back(); // Backtrack
-            i++;
-        } 
-
-        // Base Case: If we reach the end of the array, save the current subset
-        result.push_back(current);
-        return;
-
+            
+            // Backtrack
+            current.pop_back(); 
+        }
     }
 
 public:
     std::vector<std::vector<int>> subsetsWithDup(std::vector<int>& nums) {
         std::vector<std::vector<int>> result;
         std::vector<int> current;
-        
+
         // 1. Sort the array so duplicates are adjacent
         std::sort(nums.begin(), nums.end());
-        
+
         // 2. Start backtracking
         generateSubsetsWithDup(0, nums, current, result);
         return result;
     }
 };
+
 
 
 // Helper function to print subsets cleanly
