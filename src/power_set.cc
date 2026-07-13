@@ -122,6 +122,43 @@ public:
     }
 };
 
+/* 
+
+N=3, nums=[1,2,2]
+
+└─ Solution4(index=0, current=[])  <- Element is 1
+   │
+   ├── [INC 1] -> current=[1]
+   │   └─ Solution4(index=1, current=[1])  <- Element is 2
+   │      │
+   │      ├── [INC 2] -> current=[1,2]
+   │      │   └─ Solution4(index=2, current=[1,2])  <- Element is 2
+   │      │      │
+   │      │      ├── [INC 2] -> current=[1,2,2]
+   │      │      │   └─ Solution4(index=3, current=[1,2,2]) -> [Saves]
+   │      │      │
+   │      │      └── [EXC 2] -> (Skips duplicate index 2 -> nextIndex=3)
+   │      │          └─ Solution4(index=3, current=[1,2])   -> [Saves]
+   │      │
+   │      └── [EXC 2] -> (Skips duplicate index 2 -> nextIndex=3)
+   │          └─ Solution4(index=3, current=[1])     -> [Saves]
+   │
+   └── [EXC 1] -> current=[] (nextIndex=1)
+       └─ Solution4(index=1, current=[])  <- Element is 2
+          │
+          ├── [INC 2] -> current=[2]
+          │   └─ Solution4(index=2, current=[2])  <- Element is 2
+          │      │
+          │      ├── [INC 2] -> current=[2,2]
+          │      │   └─ Solution4(index=3, current=[2,2])   -> [Saves]
+          │      │
+          │      └── [EXC 2] -> (Skips duplicate index 2 -> nextIndex=3)
+          │          └─ Solution4(index=3, current=[2])     -> [Saves]
+          │
+          └── [EXC 2] -> (Skips duplicate index 2 -> nextIndex=3)
+              └─ Solution4(index=3, current=[])      -> [Saves []]
+*/
+
 class Solution4 {
 private:
     void generateSubsetsWithDup(int index, const std::vector<int>& nums, std::vector<int>& current, std::vector<std::vector<int>>& result) {
@@ -160,6 +197,27 @@ public:
     }
 };
 
+/*
+
+N=2, nums=[1,2]
+
+└─ generateSubsetsWithDup(startIndex=0, current=[])  [Adds [] to result: result=[[]]]
+   │
+   ├─── i = 0 (Element: 1)
+   │    └─ generateSubsetsWithDup(startIndex=1, current=[1])  [Adds [1] to result]: result=[[],[1]]
+   │       │
+   │       ├─── i = 1 (Element: 2)
+   │       │    └─ generateSubsetsWithDup(startIndex=2, current=[1, 2])  [Adds [1, 2] to result]: result=[[],[1],[1,2]]
+   │       │         └─ (Loop i=2 < 2 is false -> Returns immediately)
+   │       │
+   │       └─── i = 2 (Loop i=2 < 2 is false -> Returns/Backtracks)
+   │
+   ├─── i = 1 (Element: 2)
+   │    └─ generateSubsetsWithDup(startIndex=2, current=[2])  [Adds [2] to result]
+   │         └─ (Loop i=2 < 2 is false -> Returns immediately)
+   │
+   └─── i = 2 (Loop i=2 < 2 is false -> End of Root Call)
+*/
 
 class Solution5 {
 private:
