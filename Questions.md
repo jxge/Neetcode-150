@@ -287,7 +287,7 @@
        [Solution](src)
     2. [Spiral Matrix (Medium)](https://neetcode.io/problems/spiral-matrix) -
        [Solution](src)
-    3. [Set Matrix Zeroes (Medium)] (https://neetcode.io/problems/set-zeroes-in-matrix) -
+    3. [Set Matrix Zeroes (Medium)](https://neetcode.io/problems/set-zeroes-in-matrix) -
        [Solution](src)
     4. [Happy Number (Easy)](https://neetcode.io/problems/non-cyclical-number) -
        [Solution](src)
@@ -311,7 +311,7 @@
        [Solution](src)
     5. [Missing Number (Easy)](https://neetcode.io/problems/missing-number) -
        [Solution](src)
-    6. [Sum of Two Integers (Medium)] (https://neetcode.io/problems/sum-of-two-integers) -
+    6. [Sum of Two Integers (Medium)](https://neetcode.io/problems/sum-of-two-integers) -
        [Solution](src)
     7. [Reverse Integer (Medium)](https://neetcode.io/problems/reverse-integer) -
        [Solution](src)
