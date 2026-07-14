@@ -60,7 +60,7 @@
     7. M[edian of Two Sorted Array (Hard)](https://neetcode.io/problems/median-of-two-sorted-arrays) - 
        [Solution](src/median_of_two_sorted_arrays.cc)
        
-5. Linked List (11 Problems)
+6. Linked List (11 Problems)
     1. [Reverse Linked List (Easy)](https://neetcode.io/problems/reverse-a-linked-list) -
        [Solution](src/reverse_linked_list.cc)
     2. [Merge Two Sorted Lists (Easy)](https://neetcode.io/problems/merge-two-sorted-linked-lists) -
@@ -84,7 +84,7 @@
     11. [Reverse Nodes in k-Group (Hard)](https://neetcode.io/problems/reverse-nodes-in-k-group) -
        [Solution](src/reverse_nodes_in_k_group.cc)
 
-6. Trees (15 Problems)
+7. Trees (15 Problems)
     1. [Invert Binary Tree (Easy)](https://neetcode.io/problems/invert-a-binary-tree) -
        [Solution](src/invert_binary_tree.cc)
     2. [Maximum Depth of Binary Tree(Easy)](https://neetcode.io/problems/depth-of-binary-tree) -
@@ -117,7 +117,7 @@
         [Solution](src/serialize_and_deserialize_binary_tree.cc)
     17. Tree Iterator - [Solution](src/tree_iterator.cc)
 
-7. Heap / Priority Queue
+8. Heap / Priority Queue
     1. [Kth Largest Element In a Stream (Easy)](https://neetcode.io/problems/kth-largest-integer-in-a-stream) -
        [Solution](src/kth_largest_element.cc)
     3. [Last Stone Weight (Easy)](https://neetcode.io/problems/last-stone-weight) -
@@ -133,7 +133,7 @@
     8. [Find Median From Data Stream (Hard)](https://neetcode.io/problems/find-median-in-a-data-stream) -
        [Solution](src/find_median_from_data_stream.cc)
 	
-8. Backtracking
+9. Backtracking
     1. [Subsets (Medium)](https://neetcode.io/problems/subsets) -
        [Solution](src/power_set.cc)
     2. [Combination Sum (Medium)](https://neetcode.io/problems/combination-target-sum) -
@@ -155,7 +155,7 @@
     10. [N Queens (Hard)](https://neetcode.io/problems/n-queens) -
        [Solution](src/n_queens.cc)
 
-9. Tries
+10. Tries
     1. [Implement Trie Prefix Tree (Medium)](https://neetcode.io/problems/implement-prefix-tree) -
        [Solution](src/.cc)
     2. [Design Add And Search Words Data Structure (Medium)]() -
@@ -164,7 +164,7 @@
     3. [Word Search II (Medium)](https://neetcode.io/problems/search-for-word-ii) -
        [Solution](src/.cc)
 
-10. Graphs (13)
+11. Graphs (13)
     1. [Number of Islands (Medium)](https://neetcode.io/problems/count-number-of-islands) - 
        [Solution](src/)
     2. [Max Area of Island (Medium)](https://neetcode.io/problems/max-area-of-island) - 
@@ -192,7 +192,7 @@
     13. [Word Ladder (Hard)](https://neetcode.io/problems/word-ladder) - 
         [Solution](src/)
 
-11. Advanced Graphs (6)
+12. Advanced Graphs (6)
     1. [Network Delay Time (Medium)](https://neetcode.io/problems/network-delay-time) -
        [Solution](src/)
     2. [Reconstruct Itinerary (Hard)](https://neetcode.io/problems/reconstruct-flight-path) -
@@ -206,33 +206,33 @@
     6. [Cheapest Flights Within K Stops (Medium)](https://neetcode.io/problems/cheapest-flight-path -
        [Solution](src/)
 
-12. 1-D Dynamic Programming (12)
-    1. [Climbing Stairs (Easy)] (https://neetcode.io/problems/climbing-stairs/) - 
+13. 1-D Dynamic Programming (12)
+    1. [Climbing Stairs (Easy)](https://neetcode.io/problems/climbing-stairs/) - 
        [Solution](src/)
-    2. [Min Cost Climbing Stairs (Easy)] (https://neetcode.io/problems/min-cost-climbing-stairs/) - 
+    2. [Min Cost Climbing Stairs (Easy)](https://neetcode.io/problems/min-cost-climbing-stairs/) - 
        [Solution](src/)
-    3. [House Robber (Medium)] (https://neetcode.io/problems/house-robber/) - 
+    3. [House Robber (Medium)](https://neetcode.io/problems/house-robber/) - 
        [Solution](src/)
-    4. [House Robber II (Medium)] (https://neetcode.io/problems/house-robber-ii/) - 
+    4. [House Robber II (Medium)](https://neetcode.io/problems/house-robber-ii/) - 
        [Solution](src/)
-    5. [Longest Palindromic Substring (Medium)] (https://neetcode.io/problems/longest-palindromic-substring/) - 
+    5. [Longest Palindromic Substring (Medium)](https://neetcode.io/problems/longest-palindromic-substring/) - 
        [Solution](src/)
-    6. [Palindromic Substrings (Medium)] (https://neetcode.io/problems/palindromic-substrings/) - 
+    6. [Palindromic Substrings (Medium)](https://neetcode.io/problems/palindromic-substrings/) - 
        [Solution](src/)
-    7. [Decode Ways (Medium)] (https://neetcode.io/problems/decode-ways/) - 
+    7. [Decode Ways (Medium)](https://neetcode.io/problems/decode-ways/) - 
        [Solution](src/)
-    8. [Coin Change (Medium)] (https://neetcode.io/problems/coin-change/) - 
+    8. [Coin Change (Medium)](https://neetcode.io/problems/coin-change/) - 
        [Solution](src/)
-    9. [Maximum Product Subarray (Medium)] (https://neetcode.io/problems/maximum-product-subarray/) - 
+    9. [Maximum Product Subarray (Medium)](https://neetcode.io/problems/maximum-product-subarray/) - 
        [Solution](src/)
-    10. [Word Break (Medium)] (https://neetcode.io/problems/word-break/) - 
+    10. [Word Break (Medium)](https://neetcode.io/problems/word-break/) - 
         [Solution](src/)
-    11. [Longest Increasing Subsequence (Medium)] (https://neetcode.io/problems/longest-increasing-subsequence/) - 
+    11. [Longest Increasing Subsequence (Medium)](https://neetcode.io/problems/longest-increasing-subsequence/) - 
         [Solution](src/)
-    12. [Partition Equal Subset Sum (Medium)] (https://neetcode.io/problems/partition-equal-subset-sum/) - 
+    12. [Partition Equal Subset Sum (Medium)](https://neetcode.io/problems/partition-equal-subset-sum/) - 
         [Solution](src/)
 
-13. 2-D Dynamic Programming (11)
+14. 2-D Dynamic Programming (11)
     1. [Unique Paths (Medium)](https://neetcode.io/problems/count-paths) -
        [Solution](src/)
     2. [Longest Common Subsequence (Medium)](https://neetcode.io/problems/longest-common-subsequence) -
