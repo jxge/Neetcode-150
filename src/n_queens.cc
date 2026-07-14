@@ -59,29 +59,10 @@ public:
     }
 };
 
-// Driver Program
-int main() {
-    Solution solver;
-    int n = 4;
-    vector<vector<string>> solutions = solver.solveNQueens(n);
-
-    cout << "Total distinct solutions for " << n << "-Queens: " << solutions.size() << "\n\n";
-    
-    for (size_t i = 0; i < solutions.size(); ++i) {
-        cout << "Solution " << i + 1 << ":\n";
-        for (const string& row : solutions[i]) {
-            cout << row << "\n";
-        }
-        cout << "\n";
-    }
-
-    return 0;
-}
-
 
 // Find the number of solutions to the N-Queens problem
 
-class Solution {
+class Solution2 {
 private:
     int count = 0;
 
@@ -128,12 +109,27 @@ public:
 // Driver Program
 int main() {
     Solution solver;
+    int n = 4;
+    vector<vector<string>> solutions = solver.solveNQueens(n);
+
+    cout << "Total distinct solutions for " << n << "-Queens: " << solutions.size() << "\n\n";
+    
+    for (size_t i = 0; i < solutions.size(); ++i) {
+        cout << "Solution " << i + 1 << ":\n";
+        for (const string& row : solutions[i]) {
+            cout << row << "\n";
+        }
+        cout << "\n";
+    }
+
+
+    Solution2 solver2;
     
     int n1 = 4;
-    cout << "Input: n = " << n1 << "\nOutput: " << solver.totalNQueens(n1) << "\n\n";
+    cout << "Input: n = " << n1 << "\nOutput: " << solver2.totalNQueens(n1) << "\n\n";
 
     int n2 = 1;
-    cout << "Input: n = " << n2 << "\nOutput: " << solver.totalNQueens(n2) << "\n";
+    cout << "Input: n = " << n2 << "\nOutput: " << solver2.totalNQueens(n2) << "\n";
 
     return 0;
 }

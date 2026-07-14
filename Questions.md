@@ -135,25 +135,25 @@
 	
 8. Backtracking
     1. [Subsets (Medium)](https://neetcode.io/problems/subsets/question?list=neetcode150) -
-       [Solution](src/.cc)
+       [Solution](src/power_set.cc)
     2. [Combination Sum (Medium)](https://neetcode.io/problems/combination-target-sum/question?list=neetcode150) -
-       [Solution](src/.cc)
+       [Solution](src/combination_sum.cc)
     3. [Combination Sum II (Medium)](https://neetcode.io/problems/combination-target-sum-ii/question?list=neetcode150) -
-       [Solution](src/.cc)
+       [Solution](src/combination_sum_II.cc)
     4. [Permutations (Medium)](https://neetcode.io/problems/permutations/question?list=neetcode150) -
-       [Solution](src/.cc)
+       [Solution](src/permutations.cc)
     5. [Subsets II (Medium)](https://neetcode.io/problems/subsets-ii/question?list=neetcode150) -
-       [Solution](src/.cc)
+       [Solution](src/power_set_II.cc)
     6. [Gnerate Parentheses (Medium)](https://neetcode.io/problems/generate-parentheses/question?list=neetcode150) -
-       [Solution](src/.cc)
+       [Solution](src/generate_parentheses.cc)
     7. [Word Search (Medium)](https://neetcode.io/problems/search-for-word/question?list=neetcode150) -
-       [Solution](src/.cc)
+       [Solution](src/word_search.cc)
     8. [Palindrome Partitioning (Medium)](https://neetcode.io/problems/palindrome-partitioning/question?list=neetcode150) -
-       [Solution](src/.cc)
+       [Solution](src/palindrome_partitioning.cc)
     9. [Letter Combinations of a Phone Number (Medium)](https://neetcode.io/problems/combinations-of-a-phone-number/question?list=neetcode150) -
-       [Solution](src/.cc)
+       [Solution](src/letter_combinations_of_phone_number.cc)
     10. [N Queens (Hard)](https://neetcode.io/problems/n-queens/question?list=neetcode150) -
-       [Solution](src/.cc)
+       [Solution](src/n_queens.cc)
 
 9. Tries
     1. [Implement Trie Prefix Tree (Medium)](https://neetcode.io/problems/implement-prefix-tree/question?list=neetcode150) -
