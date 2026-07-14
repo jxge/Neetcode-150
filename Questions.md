@@ -255,3 +255,64 @@
         [Solution](src/)
     11. [Regular Expression Matching (Hard)](https://neetcode.io/problems/regular-expression-matching) -
         [Solution](src/)
+
+15. Greedy (8)
+    1. [Maximum Subarray (Medium)](https://neetcode.io/problems/maximum-subarray) -  
+       [Solution](src/) 
+    2. [Jump Game (Medium)](https://neetcode.io/problems/jump-game) - [Solution](src/) 
+       [Solution](src/) 
+    3. [Jump Game II (Medium)](https://neetcode.io/problems/jump-game-ii) - [Solution](src/) 
+       [Solution](src/) 
+    4. [Gas Station (Medium)](https://neetcode.io/problems/gas-station) - [Solution](src/) 
+       [Solution](src/) 
+    5. [Hand of Straights (Medium)](https://neetcode.io/problems/hand-of-straights) - [Solution](src/) 
+       [Solution](src/) 
+    6. [Merge Triplets to Form Target Triplet (Medium)](https://neetcode.io/problems/merge-triplets-to-form-target) - [Solution](src/) 
+       [Solution](src/) 
+    7. [Partition Labels (Medium)](https://neetcode.io/problems/partition-labels) - [Solution](src/) 
+       [Solution](src/) 
+    8. [Valid Parenthesis String (Medium)](https://neetcode.io/problems/valid-parenthesis-string) - [Solution](src/) 
+       [Solution](src/) 
+
+16. Intervals (6)
+    1. [Insert Interval (Medium)](https://neetcode.io/problems/insert-new-interval/question?list=neetcode150)
+    2. [Merge Intervals (Medium)](https://neetcode.io/problems/merge-intervals/question?list=neetcode150)
+    3. [Non Overlapping Intervals (Medium)](https://neetcode.io/problems/non-overlapping-intervals/question?list=neetcode150)
+    4. [Meeting Rooms (Easy)](https://neetcode.io/problems/meeting-schedule/question?list=neetcode150)
+    5. [Meeting Rooms II (Medium)](https://neetcode.io/problems/meeting-schedule-ii/question?list=neetcode150)
+    6. [Minimum Interval to Include Each Query (Hard)](https://neetcode.io/problems/minimum-interval-including-query/question?list=neetcode150)
+
+17. Math and Geometry (9)
+    1. [Rotate Image (Medium)](https://neetcode.io/problems/rotate-matrix) -
+       [Solution](src)
+    2. [Spiral Matrix (Medium)](https://neetcode.io/problems/spiral-matrix) -
+       [Solution](src)
+    3. [Set Matrix Zeroes (Medium)] (https://neetcode.io/problems/set-zeroes-in-matrix) -
+       [Solution](src)
+    4. [Happy Number (Easy)](https://neetcode.io/problems/non-cyclical-number) -
+       [Solution](src)
+    6. [Plus One (Easy)](https://neetcode.io/problems/plus-one) -
+       [Solution](src)
+    7. [Pow(x, n) (Medium)](https://neetcode.io/problems/pow-x-n) -
+       [Solution](src)
+    8. [Multiply Strings (Medium)](https://neetcode.io/problems/multiply-strings) -
+       [Solution](src)
+    9. [Detect Squares (Medium)](https://neetcode.io/problems/count-squares) -
+       [Solution](src)
+
+18. Bit Manipulation (7)
+    1. [Single Number (Easy)](https://neetcode.io/problems/single-number) -
+       [Solution](src)
+    2. [Number of 1 Bits (Easy)](https://neetcode.io/problems/number-of-one-bits) -
+       [Solution](src)
+    3. [Counting Bits (Easy)](https://neetcode.io/problems/counting-bits) -
+       [Solution](src)
+    4. [Reverse Bits (Easy)](https://neetcode.io/problems/reverse-bits) -
+       [Solution](src)
+    5. [Missing Number (Easy)](https://neetcode.io/problems/missing-number) -
+       [Solution](src)
+    6. [Sum of Two Integers (Medium)] (https://neetcode.io/problems/sum-of-two-integers) -
+       [Solution](src)
+    7. [Reverse Integer (Medium)](https://neetcode.io/problems/reverse-integer) -
+       [Solution](src)
+
