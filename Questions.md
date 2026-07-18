@@ -157,12 +157,12 @@
 
 10. Tries
     1. [Implement Trie Prefix Tree (Medium)](https://neetcode.io/problems/implement-prefix-tree) -
-       [Solution](src/.cc)
-    2. [Design Add And Search Words Data Structure (Medium)]() -
-       [Solution](src/.cc)](https://neetcode.io/problems/design-word-search-data-structure) -
+       [Solution](src/trie_tree.cc)
+    2. [Design Add And Search Words Data Structure (Medium)](https://neetcode.io/problems/design-word-search-data-structure) -
+       [Solution](src/word_search.cc)]
        [Solution](src/.cc)
     3. [Word Search II (Medium)](https://neetcode.io/problems/search-for-word-ii) -
-       [Solution](src/.cc)
+       [Solution](src/word_search_ii.cc)
 
 11. Graphs (13)
     1. [Number of Islands (Medium)](https://neetcode.io/problems/count-number-of-islands) - 
