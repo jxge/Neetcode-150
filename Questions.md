@@ -159,18 +159,17 @@
     1. [Implement Trie Prefix Tree (Medium)](https://neetcode.io/problems/implement-prefix-tree) -
        [Solution](src/trie_tree.cc)
     2. [Design Add And Search Words Data Structure (Medium)](https://neetcode.io/problems/design-word-search-data-structure) -
-       [Solution](src/word_search.cc)]
-       [Solution](src/.cc)
+       [Solution](src/word_search.cc)
     3. [Word Search II (Medium)](https://neetcode.io/problems/search-for-word-ii) -
        [Solution](src/word_search_ii.cc)
 
 11. Graphs (13)
     1. [Number of Islands (Medium)](https://neetcode.io/problems/count-number-of-islands) - 
-       [Solution](src/)
+       [Solution](src/number_of_islands.cc)
     2. [Max Area of Island (Medium)](https://neetcode.io/problems/max-area-of-island) - 
-       [Solution](src/)
+       [Solution](src/max_area_of_island.cc)
     3. [Clone Graph (Medium)](https://neetcode.io/problems/clone-graph) - 
-       [Solution](src/)
+       [Solution](src/clone_graph.cc)
     4. [Walls And Gates (Medium)](https://neetcode.io/problems/islands-and-treasure) - 
        [Solution](src/)
     5. [Rotting Oranges (Medium)](https://neetcode.io/problems/rotting-fruit) - 
