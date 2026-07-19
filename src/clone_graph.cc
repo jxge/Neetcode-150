@@ -299,6 +299,118 @@ public:
     ~Solution() { delete GLOBAL_MARKER; }
 };
 
+#include <iostream>
+#include <vector>
+#include <queue>
+#include <cstdint> // For uintptr_t
+
+using namespace std;
+
+class Node {
+public:
+    int val;
+    vector<Node*> neighbors;
+    Node() : val(0), neighbors(vector<Node*>()) {}
+    Node(int _val) : val(_val), neighbors(vector<Node*>()) {}
+};
+
+
+/*
+ * Applying Pointer Tagging specifically to the cloned node pointer stored at
+ * the end of the original node's neighbors list, 
+ */
+class Solution {
+private:
+    // Helper to check if an original node has been visited in Pass 1
+    bool isVisitedPass1(Node* node) {
+        if (!node || node->neighbors.empty()) return false;
+        
+        // Convert the last pointer to an integer to inspect the lowest bit
+        uintptr_t last_ptr_val = reinterpret_cast<uintptr_t>(node->neighbors.back());
+        
+        // If the lowest bit is 1, this node has an embedded tagged clone pointer
+        return (last_ptr_val & 1) == 1;
+    }
+
+    // Helper to extract the actual clean clone pointer from a tagged pointer value
+    Node* getRealClonePointer(Node* tagged_ptr) {
+        uintptr_t val = reinterpret_cast<uintptr_t>(tagged_ptr);
+        return reinterpret_cast<Node*>(val & ~1); // Clear the lowest bit
+    }
+
+public:
+    Node* cloneGraph(Node* node) {
+        if (!node) return nullptr;
+
+        // --- PASS 1: Clone and Embed with Tagged Pointer ---
+        queue<Node*> q1;
+        q1.push(node);
+        
+        Node* initial_clone = new Node(node->val);
+        // Tag the clone pointer by setting its lowest bit to 1
+        Node* tagged_initial_clone = reinterpret_cast<Node*>(reinterpret_cast<uintptr_t>(initial_clone) | 1);
+        node->neighbors.push_back(tagged_initial_clone);
+
+        while (!q1.empty()) {
+            Node* curr = q1.front();
+            q1.pop();
+
+            int original_size = curr->neighbors.size() - 1; 
+            for (int i = 0; i < original_size; ++i) {
+                Node* neighbor = curr->neighbors[i];
+                
+                if (!isVisitedPass1(neighbor)) {
+                    Node* neighbor_clone = new Node(neighbor->val);
+                    // Tag the neighbor's clone pointer
+                    Node* tagged_clone = reinterpret_cast<Node*>(reinterpret_cast<uintptr_t>(neighbor_clone) | 1);
+                    neighbor->neighbors.push_back(tagged_clone);
+                    q1.push(neighbor);
+                }
+            }
+        }
+
+        // --- PASS 2: Rebuild and Self-Clean Simultaneously ---
+        queue<Node*> q2;
+        q2.push(node);
+
+        while (!q2.empty()) {
+            Node* curr = q2.front();
+            q2.pop();
+
+            // Extract the tagged clone pointer from the back, then clean it
+            Node* tagged_curr_clone = curr->neighbors.back();
+            Node* curr_clone = getRealClonePointer(tagged_curr_clone);
+            
+            int original_size = curr->neighbors.size() - 1;
+
+            for (int i = 0; i < original_size; ++i) {
+                Node* neighbor = curr->neighbors[i];
+                
+                // Fetch the neighbor's tagged clone pointer and clean it
+                Node* tagged_neighbor_clone = neighbor->neighbors.back();
+                Node* neighbor_clone = getRealClonePointer(tagged_neighbor_clone);
+
+                // Build the cloned graph's edge connection
+                curr_clone->neighbors.push_back(neighbor_clone);
+
+                // Pass 2 Visited Check: If the neighbor's back pointer is STILL tagged,
+                // it means it hasn't been processed or queued in Pass 2 yet.
+                uintptr_t neighbor_back_val = reinterpret_cast<uintptr_t>(neighbor->neighbors.back());
+                if ((neighbor_back_val & 1) == 1) {
+                    // Untag it in-place inside the neighbor's vector to mark it "Visited in Pass 2"
+                    neighbor->neighbors.back() = neighbor_clone; 
+                    q2.push(neighbor);
+                }
+            }
+
+            // In-place cleanup: Completely removes the clone pointer and restores the original node
+            curr->neighbors.pop_back();
+        }
+
+        return initial_clone;
+    }
+};
+
 
 
 // Helper function to print adjacency list representation of a graph (for verification)
