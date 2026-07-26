@@ -173,37 +173,37 @@
     4. [Walls And Gates (Medium)](https://neetcode.io/problems/islands-and-treasure) - 
        [Solution](src/islands_and_treasure.cc)
     5. [Rotting Oranges (Medium)](https://neetcode.io/problems/rotting-fruit) - 
-       [Solution](src/)
+       [Solution](src/rotting_fruit.cc)
     6. [Pacific Atlantic Water Flow (Medium)](https://neetcode.io/problems/pacific-atlantic-water-flow) - 
-       [Solution](src/)
+       [Solution](src/pacific_atlantic_water_flow.cc)
     7. [Surrounded Regions (Medium)](https://neetcode.io/problems/surrounded-regions) - 
-       [Solution](src/)
+       [Solution](src/surrounded_regions.cc)
     8. [Course Schedule (Medium)](https://neetcode.io/problems/course-schedule) - 
-       [Solution](src/)
+       [Solution](src/course_schedule.cc)
     9. [Course Schedule II (Medium)](https://neetcode.io/problems/course-schedule-ii) - 
-       [Solution](src/)
+       [Solution](src/course_schedule_ii.cc)
     10. [Graph Valid Tree (Medium)](https://neetcode.io/problems/valid-tree) - 
-        [Solution](src/)
+        [Solution](src/graph_valid_tree.cc)
     11. [Number of Connected Components In An Undirected Graph (Medium)](https://neetcode.io/problems/count-connected-components) - 
-        [Solution](src/)
+        [Solution](src/number_of_connected_comp.cc)
     12. [Redundant Connection (Medium)](https://neetcode.io/problems/redundant-connection) - 
-        [Solution](src/)
+        [Solution](src/redundant_connection.cc)
     13. [Word Ladder (Hard)](https://neetcode.io/problems/word-ladder) - 
-        [Solution](src/)
+        [Solution](src/word_ladder.cc)
 
 12. Advanced Graphs (6)
     1. [Network Delay Time (Medium)](https://neetcode.io/problems/network-delay-time) -
-       [Solution](src/)
+       [Solution](src/network_delay_time.cc)
     2. [Reconstruct Itinerary (Hard)](https://neetcode.io/problems/reconstruct-flight-path) -
-       [Solution](src/)
+       [Solution](src/reconstruct_flight_path.cc)
     3. [Min Cost to Connect All Points (Medium)](https://neetcode.io/problems/min-cost-to-connect-points) -
-       [Solution](src/)
+       [Solution](src/min_cost_to_connect_points.cc)
     4. [Swim In Rising Water (Hard)](https://neetcode.io/problems/swim-in-rising-water) -
-       [Solution](src/)
+       [Solution](src/swim_in_rising_water.cc)
     5. [Alien Dictionary (Hard)](https://neetcode.io/problems/foreign-dictionary) -
-       [Solution](src/)
+       [Solution](src/alien_dictionary.cc)
     6. [Cheapest Flights Within K Stops (Medium)](https://neetcode.io/problems/cheapest-flight-path) -
-       [Solution](src/)
+       [Solution](src/cheapest_flight_path.cc)
 
 13. 1-D Dynamic Programming (12)
     1. [Climbing Stairs (Easy)](https://neetcode.io/problems/climbing-stairs/) - 
