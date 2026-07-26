@@ -171,7 +171,7 @@
     3. [Clone Graph (Medium)](https://neetcode.io/problems/clone-graph) - 
        [Solution](src/clone_graph.cc)
     4. [Walls And Gates (Medium)](https://neetcode.io/problems/islands-and-treasure) - 
-       [Solution](src/)
+       [Solution](src/islands_and_treasure.cc)
     5. [Rotting Oranges (Medium)](https://neetcode.io/problems/rotting-fruit) - 
        [Solution](src/)
     6. [Pacific Atlantic Water Flow (Medium)](https://neetcode.io/problems/pacific-atlantic-water-flow) - 
@@ -202,7 +202,7 @@
        [Solution](src/)
     5. [Alien Dictionary (Hard)](https://neetcode.io/problems/foreign-dictionary) -
        [Solution](src/)
-    6. [Cheapest Flights Within K Stops (Medium)](https://neetcode.io/problems/cheapest-flight-path -
+    6. [Cheapest Flights Within K Stops (Medium)](https://neetcode.io/problems/cheapest-flight-path) -
        [Solution](src/)
 
 13. 1-D Dynamic Programming (12)
