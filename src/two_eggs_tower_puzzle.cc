@@ -17,13 +17,14 @@ Dropping the first egg from a floor k.
 
 Approach 2: The DP Fomula
     Let D(e, f) be the minimum number of drops needed for e eggs and f floors.
+
         D(e, 0) = 0
         D(e, 1) = 1 (e > 0)
         D(1, f) = f
         D(e, f) = 1 + min (max(D(e-1, k-1), D(e, f-k))     1<=k<=f
 
 Approach 3: The Flipped DP Formula
-    let F(d,e) the maximum number of floors we can test using d drops and e egges
+    Let F(d,e) the maximum number of floors we can test using d drops and e egges
         F(0,e) = F(d,0) = 0
         F(d,e) = F(d-1, e-1)    // if the first egg breaks
                + F(d-1, e)      // if the first egg does not break
@@ -81,4 +82,3 @@ int main() {
               
     return 0;
 }
-
