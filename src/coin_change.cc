@@ -35,7 +35,7 @@ Constraints:
 DP problem:
     DP(k) = INF  for n < 0
     DP(0) = 0    
-    DP(k) = 1 + min(k - conins[i])     i = 0...m-1  (m=coin.size())
+    DP(k) = 1 + min(DP[k - conins[i]])     i = 0...m-1  (m=coin.size())
 */
 
 #include <iostream>
@@ -95,7 +95,7 @@ public:
     }
 };
 
-/* Bottom-Up DP */
+/* Bottom-Up DP: left-looking and fan-in */
 class Solution2 {
 public:
     int coinChange(vector<int>& coins, int amount) {
@@ -123,6 +123,35 @@ public:
         return (dp[amount] > amount) ? -1 : dp[amount];
     }
 };
+
+/* Bottom-Up DP: right-looking and fan-out */
+class Solution {
+public:
+    int coinChange(vector<int>& coins, int amount) {
+        const int INF = amount + 1;
+        vector<int> dp(amount + 1, INF);
+
+        // Base case: 0 coins are needed to make an amount of 0
+        dp[0] = 0;
+
+        // Iterate through all amounts up to target
+        for (int k = 0; k < amount; ++k) {
+            if (dp[k] != INF) {
+                for (int coin : coins) {
+                    // Safe subtraction prevents integer overflow when coin is large
+                    if (coin <= amount - k) {
+                        // Always keep the absolute minimum coin count
+                        dp[k + coin] = min(dp[k + coin], dp[k] + 1);
+                    }
+                }
+            }
+        }
+
+        // If target index is still INF, it's impossible to make that amount
+        return (dp[amount] == INF) ? -1 : dp[amount];
+    }
+};
+
 
 // Driver program to test the implementation
 template<class Solution>
@@ -180,5 +209,6 @@ int main()
 {
     test<Solution1>();
     test<Solution2>();
+    test<Solution3>();
     return 0;
 }
