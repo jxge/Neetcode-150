@@ -217,7 +217,7 @@
     5. [Longest Palindromic Substring (Medium)](https://neetcode.io/problems/longest-palindromic-substring/) - 
        [Solution](src/longest_palindromic_substring.cc)
     6. [Palindromic Substrings (Medium)](https://neetcode.io/problems/palindromic-substrings/) - 
-       [Solution](src/)
+       [Solution](src/palindromic_substrings)
     7. [Decode Ways (Medium)](https://neetcode.io/problems/decode-ways/) - 
        [Solution](src/decode_ways.cc)
     8. [Coin Change (Medium)](https://neetcode.io/problems/coin-change/) - 
@@ -245,15 +245,15 @@
     6. [Interleaving String (Medium)](https://neetcode.io/problems/interleaving-string) -
        [Solution](src/interleaving_string.cc)
     7. [Longest Increasing Path In a Matrix (Hard)](https://neetcode.io/problems/longest-increasing-path-in-matrix) -
-       [Solution](src/)
+       [Solution](src/longest_increasing_path_in_matrix.cc)
     8. [Distinct Subsequences (Hard)](https://neetcode.io/problems/count-subsequences) -
-       [Solution](src/)
+       [Solution](src/distinct_subsequences.cc)
     9. [Edit Distance (Medium)](https://neetcode.io/problems/edit-distance) -
-       [Solution](src/)
+       [Solution](src/edit_distance.cc)
     10. [Burst Balloons (Hard)](https://neetcode.io/problems/burst-balloons) -
-        [Solution](src/)
+        [Solution](src/burst_ballons.cc)
     11. [Regular Expression Matching (Hard)](https://neetcode.io/problems/regular-expression-matching) -
-        [Solution](src/)
+        [Solution](src/regular_expression_matching.cc)
 
 15. Greedy (8)
     1. [Maximum Subarray (Medium)](https://neetcode.io/problems/maximum-subarray) -  
